@@ -1,0 +1,18 @@
+h1, ul, p {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.heder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    display: flex;
+}
