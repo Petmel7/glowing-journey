@@ -1,5 +1,4 @@
-    <footer>
-
+    <footer class="background">
         <div class="footer">
             <div>
                 <h1><a href="">english<span>excellence</span>.</a></h1>

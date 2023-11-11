@@ -1,10 +1,10 @@
-/* h1, ul, p {
+h1, ul, p {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.heder {
+.heder, .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,11 +13,10 @@
     margin-right: auto;
 }
 
-.footer {
-    display: flex;
+/* .footer {
     
-}
-
-.test-color {
-    color: brown;
 } */
+
+.background {
+    background-color: rgba(18, 20, 23, 1);
+}
