@@ -1,5 +1,22 @@
-h1, ul, p {
+:root {
+    --primary-color: rgba(18, 20, 23, 1);
+    --secondary-color: rgba(243, 245, 246, 1);
+    --accent-color: rgba(77, 194, 116, 1);
+    /* --semi-transparent-color: rgba(18, 20, 23, 0.5); */
+    --white-color: rgba(255, 255, 255, 1);
+    --custom-color: rgba(146, 147, 148, 1);
+}
+
+body {
+    background-color: var(--white-color);
+    /* max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto; */
+}
+
+h1, ul, p, a {
     list-style-type: none;
+    text-decoration: none;
     margin: 0;
     padding: 0;
 }
@@ -13,10 +30,79 @@ h1, ul, p {
     margin-right: auto;
 }
 
-/* .footer {
-    
-} */
+.heder {
+    padding: 10px;
+}
+
+.heder .heder-nav .heder-nav-list {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.logo {
+    color: var(--primary-color);
+}
+
+.logo-excellence {
+    color: var(--accent-color)
+}
+
+.heder .heder-social .heder-social-a .heder-social-svg {
+    fill: var(--accent-color);
+    margin-right: 15px;
+}
+
+
 
 .background {
-    background-color: rgba(18, 20, 23, 1);
+    background-color: var(--primary-color);
+    /* padding: 20px; */
+}
+
+.footer {
+    padding: 40px;
+}
+
+.footer-logo {
+    color: var(--white-color);
+    /* margin-bottom: 20px; */
+}
+
+.footer h1 {
+    margin-bottom: 20px;
+}
+
+.phone {
+    margin-bottom: 20px;
+}
+
+.phone-address {
+    color: var(--custom-color);
+}
+
+.number-address {
+    color: var(--white-color);
+}
+
+.nav .nav-children {
+    margin-bottom: 10px;
+}
+
+.nav-children-list {
+    color: var(--white-color);
+}
+
+.footer-date {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: solid 1px var(--custom-color);
+}
+
+.footer-date-text {
+    color: var(--custom-color);
 }
