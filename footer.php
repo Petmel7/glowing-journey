@@ -11,7 +11,6 @@
             </div>
 
             <nav>
-                <!-- Навігаційні посилання, меню і т. д. -->
                 <ul>
                     <li><a href="">About us</a></li>
                     <li><a href="">Our lessons</a></li>
@@ -22,7 +21,7 @@
             </nav>
 
             <div>
-                <ul>
+                <ul class="footer">
                     <li>
                         <a href="#">
                             <img src="./images.svg/facebook.svg" alt="Facebook">
@@ -42,7 +41,10 @@
             </div>
         </div>
 
-        <p>&copy; <?php echo date("Y"); ?> English Excellence. All rights reserved.</p>
+        <div class="footer">
+            <p>&copy; <?php echo date("Y"); ?> English Excellence. All rights reserved.</p>
+            <p>Privacy Policy Terms of Service</p>
+        </div>
     </footer>
     <!-- Додайте скрипти або інші елементи, які вам потрібні перед закриванням тега body -->
     </body>
