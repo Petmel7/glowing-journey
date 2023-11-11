@@ -11,7 +11,7 @@
             </div>
 
             <nav>
-                <ul>
+                <ul class="test-color">
                     <li><a href="">About us</a></li>
                     <li><a href="">Our lessons</a></li>
                     <li><a href="">Teachers</a></li>
