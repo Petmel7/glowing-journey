@@ -1,5 +1,7 @@
 <?php include 'header.php'; ?>
 
-<!-- Основний вміст сторінки -->
+<?php include 'hero.php'; ?>
+
+<?php include 'About-Us.php'; ?>
 
 <?php include 'footer.php'; ?>

@@ -1,9 +1,10 @@
     <footer class="background">
-        <div class="footer">
+        <div class="footer container">
             <div>
-                <h1>
+
+                <div class="logo-footer">
                     <a href="" class="footer-logo">english<span class="logo-excellence">excellence</span>.</a>
-                </h1>
+                </div>
 
                 <div class="phone">
                     <p class="phone-address">Phone number:</p>
@@ -34,20 +35,26 @@
             </nav>
 
             <div>
-                <ul class="footer">
-                    <li>
-                        <a href="#">
-                            <img src="./images.svg/facebook.svg" alt="Facebook">
+                <ul class="heder">
+                    <li class="heder-social">
+                        <a href="#" class="heder-social-a">
+                            <svg class="heder-social-svg  facebook footer-fill">
+                                <use xlink:href="./images.svg/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <img src="./images.svg/instagram.svg" alt="Instagram">
+                    <li class="heder-social">
+                        <a href="#" class="heder-social-a">
+                            <svg class="heder-social-svg instagram footer-fill">
+                                <use xlink:href="./images.svg/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <img src="./images.svg/youtube.svg" alt="YouTube">
+                    <li class="heder-social">
+                        <a href="#" class="heder-social-a">
+                            <svg class="heder-social-svg youtube footer-fill">
+                                <use xlink:href="./images.svg/symbol-defs.svg#icon-youtube"></use>
+                            </svg>
                         </a>
                     </li>
                 </ul>
@@ -59,7 +66,7 @@
             <p class="footer-date-text">Privacy Policy Terms of Service</p>
         </div>
     </footer>
-    <!-- Додайте скрипти або інші елементи, які вам потрібні перед закриванням тега body -->
+
     </body>
 
     </html>
