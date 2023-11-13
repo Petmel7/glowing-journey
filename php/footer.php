@@ -35,24 +35,24 @@
             </nav>
 
             <div>
-                <ul class="heder">
-                    <li class="heder-social">
-                        <a href="#" class="heder-social-a">
-                            <svg class="heder-social-svg  facebook footer-fill">
+                <ul class="header">
+                    <li class="header-social">
+                        <a href="#" class="header-social-a">
+                            <svg class="header-social-svg  facebook footer-fill">
                                 <use xlink:href="./images.svg/symbol-defs.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="heder-social">
-                        <a href="#" class="heder-social-a">
-                            <svg class="heder-social-svg instagram footer-fill">
+                    <li class="header-social">
+                        <a href="#" class="header-social-a">
+                            <svg class="header-social-svg instagram footer-fill">
                                 <use xlink:href="./images.svg/symbol-defs.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="heder-social">
-                        <a href="#" class="heder-social-a">
-                            <svg class="heder-social-svg youtube footer-fill">
+                    <li class="header-social">
+                        <a href="#" class="header-social-a">
+                            <svg class="header-social-svg youtube footer-fill">
                                 <use xlink:href="./images.svg/symbol-defs.svg#icon-youtube"></use>
                             </svg>
                         </a>
@@ -61,7 +61,7 @@
             </div>
         </div>
 
-        <div class="footer-date">
+        <div class="footer-date container">
             <p class="footer-date-text">&copy; <?php echo date("Y"); ?> English Excellence. All rights reserved.</p>
             <p class="footer-date-text">Privacy Policy Terms of Service</p>
         </div>

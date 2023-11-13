@@ -1,0 +1,53 @@
+/* Header */
+
+.logo {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo-excellence {
+    color: var(--accent-color)
+}
+
+.nav {
+    padding: 20px 128px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    padding: 5px;
+}
+
+.header .header-nav .header-nav-list {
+    color: var(--primary-color);
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header-fill {
+    fill: var(--primary-color);
+}
+
+.footer-fill {
+    fill: var(--custom-color);
+}
+
+.header-social:not(:last-child) {
+    margin-right: 15px;
+}
+
+.header-social-svg {
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    width: 28px;
+    height: 28px;
+    padding: 8px;
+    gap: 8px;
+}

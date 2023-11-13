@@ -1,0 +1,25 @@
+:root {
+    --primary-color: #121417;
+    --secondary-color: #F3F5F6;
+    --accent-color: #4DC274;
+    --white-color: #FFFFFF;
+    --custom-color: rgba(146, 147, 148, 1);
+}
+
+body {
+    background-color: var(--white-color);
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, ul, li, p, a {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}

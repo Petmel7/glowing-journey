@@ -1,7 +1,7 @@
-<?php include 'header.php'; ?>
+<?php include 'php/header.php'; ?>
 
-<?php include 'hero.php'; ?>
+<?php include 'php/hero.php'; ?>
 
-<?php include 'About-Us.php'; ?>
+<?php include 'php/about-us.php'; ?>
 
-<?php include 'footer.php'; ?>
+<?php include 'php/footer.php'; ?>
