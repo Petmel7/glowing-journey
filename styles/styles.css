@@ -4,6 +4,7 @@
     --accent-color: #4DC274;
     --white-color: #FFFFFF;
     --custom-color: rgba(146, 147, 148, 1);
+    --text-color: rgba(18, 20, 23, 0.50);
 }
 
 body {
@@ -17,9 +18,70 @@ body {
     margin-right: auto;
 }
 
-h1, h2, ul, li, p, a {
+h1, h2, h3, div, ul, li, p, a {
     list-style-type: none;
     text-decoration: none;
     margin: 0;
     padding: 0;
+}
+
+/* Master */
+
+.master {
+    height: 950px;
+    /* padding: 64px 472px 746px 64px; */
+    border-radius: 30px;
+    background: linear-gradient(85deg, #4DC274 2.25%, #BEE8CC 131.25%);
+}
+
+.master-title {
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.master-title-language {
+    color: #BEE8CC;
+}
+
+.master-title-power {
+    font-size: 40px;
+    font-weight: 700; 
+    color: var(--primary-color);   
+}
+
+.checkbox {
+    width: 1144px;
+    height: 471px;
+    background-color: var(--white-color);
+}
+
+.master-checkbox {
+    display: flex;
+}
+
+.master-checkbox-input {}
+
+.master-checkbox-text {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.master-background {}
+
+.master-background-image {
+    background-image: url(../images.png/tall\ stack\ of\ books.png);
+    width: 291px;
+    height: 343px;
+}
+
+.master-button {
+    padding: 16px 64px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 12px;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    border: transparent;
 }

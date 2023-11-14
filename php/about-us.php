@@ -3,7 +3,7 @@
         <h2 class="about-title">About Us</h2>
         <p class="about-title-text">We are dedicated to providing engaging and effective English language courses in a supportive and stimulating learning environment</p>
     </div>
-    <div class="list-block">
+    <div class=" list">
         <ul class="list">
             <li class="list-children">
                 <span class="list-children-number">01</span>

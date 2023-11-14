@@ -2,7 +2,6 @@
 
 .about {
     text-align: center;
-    /* max-width: 658px; */
     margin-bottom: 64px;
 }
 
@@ -19,24 +18,17 @@
     font-weight: 400;
 }
 
-.list-block {
-    display: flex;
-}
-
 .list {
-    /* column-count: 2;
-    column-gap: 20px; */
-
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-bottom: 100px;
 }
 
 .list-children {
     background-color: var(--secondary-color);
     width: 373px;
     border-radius: 30px;
-    margin-right: 32px;
-    margin-bottom: 32px;
     padding: 20px;
 
 }

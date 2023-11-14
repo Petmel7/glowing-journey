@@ -1,0 +1,83 @@
+/* Our-lessons */
+
+.our-lessons {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.our-lessons-title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.our-lessons-text {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.our-lessons-list {
+    display: flex;
+    margin-bottom: 150px;
+}
+
+.our-lessons-list-children {
+    width: 373px;
+    border-radius: 30px;
+    border: 1px solid var(--accent-color);
+    background-color: var(--white-color);
+    padding: 32px;
+    text-align: center;
+}
+
+.our-lessons-children {
+    background-color: var(--accent-color);
+}
+
+.our-lessons-children .study-mode,
+.our-lessons-children .our-lessons-list-children-price,
+.our-lessons-children .our-lessons-list-children-text {
+    color: var(--white-color);
+}
+
+.our-lessons-children .our-lessons-button {
+    border: 1px solid var(--white-color);
+    padding: 15px 67px;
+}
+
+.our-lessons-list-children:not(:last-child) {
+    margin-right: 32px;
+}
+
+.study-mode {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.our-lessons-list-children-price {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.our-lessons-list-children div {
+    margin-bottom: 63px;
+}
+
+.our-lessons-list-children-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.our-lessons-button {
+    padding: 16px 68px;
+    border-radius: 12px;
+    border: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}

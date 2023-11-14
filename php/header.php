@@ -18,6 +18,7 @@
     echo '<link rel="stylesheet" href="./styles/hero.css">';
     echo '<link rel="stylesheet" href="./styles/about-us.css">';
     echo '<link rel="stylesheet" href="./styles/footer.css">';
+    echo '<link rel="stylesheet" href="./styles/our-lessons.css">';
     ?>
 </head>
 
