@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope:400,700&display=swap">
     <style>
         body {
+
             font-family: 'Manrope', sans-serif;
         }
     </style>
