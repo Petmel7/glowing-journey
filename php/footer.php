@@ -38,22 +38,22 @@
                 <ul class="header">
                     <li class="header-social">
                         <a href="#" class="header-social-a">
-                            <svg class="header-social-svg  facebook footer-fill">
-                                <use xlink:href="./images.svg/symbol-defs.svg#icon-facebook"></use>
+                            <svg class="header-social-svg footer-fill">
+                                <use href="./images.svg/symbol-defs.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="header-social">
                         <a href="#" class="header-social-a">
-                            <svg class="header-social-svg instagram footer-fill">
-                                <use xlink:href="./images.svg/symbol-defs.svg#icon-instagram"></use>
+                            <svg class="header-social-svg footer-fill">
+                                <use href="./images.svg/symbol-defs.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="header-social">
                         <a href="#" class="header-social-a">
-                            <svg class="header-social-svg youtube footer-fill">
-                                <use xlink:href="./images.svg/symbol-defs.svg#icon-youtube"></use>
+                            <svg class="header-social-svg footer-fill">
+                                <use href="./images.svg/symbol-defs.svg#icon-youtube"></use>
                             </svg>
                         </a>
                     </li>
@@ -66,7 +66,9 @@
             <p class="footer-date-text">Privacy Policy Terms of Service</p>
         </div>
     </footer>
-
+    <?php
+    echo '<script src="php/index.js"></script>';
+    ?>
     </body>
 
     </html>

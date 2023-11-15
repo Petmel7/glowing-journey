@@ -13,12 +13,12 @@
         }
     </style>
     <?php
-    echo '<link rel="stylesheet" href="./styles/styles.css">';
-    echo '<link rel="stylesheet" href="./styles/header.css">';
-    echo '<link rel="stylesheet" href="./styles/hero.css">';
-    echo '<link rel="stylesheet" href="./styles/about-us.css">';
-    echo '<link rel="stylesheet" href="./styles/footer.css">';
-    echo '<link rel="stylesheet" href="./styles/our-lessons.css">';
+    echo '<link rel="stylesheet" href="styles/styles.css">';
+    echo '<link rel="stylesheet" href="styles/header.css">';
+    echo '<link rel="stylesheet" href="styles/hero.css">';
+    echo '<link rel="stylesheet" href="styles/about-us.css">';
+    echo '<link rel="stylesheet" href="styles/footer.css">';
+    echo '<link rel="stylesheet" href="styles/our-lessons.css">';
     ?>
 </head>
 
@@ -52,21 +52,21 @@
                 <li class="header-social">
                     <a href="#" class="header-social-a">
                         <svg class="header-social-svg header-fill">
-                            <use xlink:href="./images.svg/symbol-defs.svg#icon-facebook"></use>
+                            <use href="./images.svg/symbol-defs.svg#icon-facebook"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="header-social">
                     <a href="#" class="header-social-a">
                         <svg class="header-social-svg header-fill">
-                            <use xlink:href="./images.svg/symbol-defs.svg#icon-instagram"></use>
+                            <use href="./images.svg/symbol-defs.svg#icon-instagram"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="header-social">
                     <a href="#" class="header-social-a">
                         <svg class="header-social-svg header-fill">
-                            <use xlink:href="./images.svg/symbol-defs.svg#icon-youtube"></use>
+                            <use href="./images.svg/symbol-defs.svg#icon-youtube"></use>
                         </svg>
                     </a>
                 </li>
@@ -74,6 +74,7 @@
         </div>
 
     </header>
+
 </body>
 
 </html>
