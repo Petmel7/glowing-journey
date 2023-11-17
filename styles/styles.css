@@ -56,8 +56,6 @@ h1, h2, h3, div, ul, li, p, a {
 
 .master-block {
     margin-bottom: 40px;
-    /* display: flex; */
-    flex-direction: column;
 }
 
 .checkbox {
@@ -73,18 +71,28 @@ h1, h2, h3, div, ul, li, p, a {
 
 /* CSS Для чекбоксу */
 
-.checkbox-container {
+.flex-container {
     display: flex;
+}
+
+.test {
+    width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: var(--accent-color);
+}
+
+.checkbox-container {
+    /* display: flex;
+    align-items: center; */
     /* position: relative; */
     /* display: inline-block; */
-    /* margin-right: 10px;
-    display: flex;
-    align-items: center */
+
     /* display: grid; */
-        /* grid-template-columns: auto 1fr; */
-        /* Перший елемент автоматична ширина, другий розширюється на залишок доступного простору */
-        /* align-items: center; */
-        /* Вирівнюйте елементи по вертикалі */
+    /* grid-template-columns: auto 1fr; */
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr); */
 }
 
 input[type="checkbox"] {
@@ -98,14 +106,11 @@ label {
 }
 
 .custom-checkbox {
-    width: 20px;
-    height: 20px;
+    /* width: 20px;
+    height: 20px; */
     fill: var(--white-color);
     transition: fill 0.3s ease;
-    background-color: var(--accent-color);
-    border-radius: 50%;
-    padding: 5px;
-    display: inline-block;
+    /* background-color: var(--accent-color); */
 }
 
 input[type="checkbox"]:checked+label .custom-checkbox {
@@ -115,8 +120,13 @@ input[type="checkbox"]:checked+label .custom-checkbox {
 /* ============================= */
 
 .master-checkbox {
-    /* display: grid; */
     /* display: flex; */
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr); */
+    width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        padding: 5px;
 }
 
 .master-checkbox-text {
@@ -131,8 +141,8 @@ input[type="checkbox"]:checked+label .custom-checkbox {
 
 .master-background-image {
     background-image: url(../images.png/tall\ stack\ of\ books.png);
-    /* width: 351px;
-    height: 403px; */
+    /* width: 251px;
+    height: 303px; */
     width: 291px;
     height: 343px;
     margin-left: auto;
