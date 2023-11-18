@@ -22,7 +22,7 @@
 }
 
 .hero-title-english {
-    color: #BEE8CC;
+    color: var(--decoration-color);
 }
 
 .hero-button {

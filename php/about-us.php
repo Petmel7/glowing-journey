@@ -1,8 +1,11 @@
 <section class="container">
+
     <div class="about">
         <h2 class="about-title">About Us</h2>
+        <span class="about-decoration"></span>
         <p class="about-title-text">We are dedicated to providing engaging and effective English language courses in a supportive and stimulating learning environment</p>
     </div>
+
     <div class=" list">
         <ul class="list">
             <li class="list-children">

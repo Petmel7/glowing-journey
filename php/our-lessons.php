@@ -1,6 +1,7 @@
 <section class="container">
     <div class="our-lessons">
         <h3 class="our-lessons-title">Our lessons</h3>
+        <span class="our-decoration"></span>
         <p class="our-lessons-text">Our lessons are carefully structured and interactive, designed to promote rapid language acquisition through practical tasks and real-world scenarios</p>
     </div>
 

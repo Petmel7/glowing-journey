@@ -1,0 +1,40 @@
+/* Meet-our-teachers */
+
+.lesons-decoration {
+    width: 170px;
+    height: 20px;
+    background-color: var(--decoration-color);
+    position: absolute;
+    transform: translate(4%, -100%);
+    border-radius: 10px;
+}
+
+.teachers {
+    display: flex;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.teachers-children {
+    border-radius: 50%;
+}
+
+.teachers-children:not(:last-child) {
+    margin-right: 32px;
+}
+
+.teachers-images {
+    margin-bottom: 16px;
+}
+
+.teachers-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.teachers-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+}

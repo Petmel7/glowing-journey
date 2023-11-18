@@ -10,6 +10,17 @@
     font-weight: 700;
     color: #88898B;
     margin-bottom: 16px;
+    z-index: 1;
+    position: relative;
+}
+
+.about-decoration {
+    width: 60px;
+    height: 20px;
+    background-color: var(--decoration-color);
+    position: absolute;
+    transform: translate(55%, -180%);
+    border-radius: 10px;
 }
 
 .about-title-text {

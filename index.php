@@ -8,4 +8,8 @@
 
 <?php include 'php/master.php'; ?>
 
+<?php include 'php/meet-our-teachers.php'; ?>
+
+<?php include 'php/what-our-students-say.php'; ?>
+
 <?php include 'php/footer.php'; ?>

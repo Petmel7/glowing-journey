@@ -19,6 +19,9 @@
     echo '<link rel="stylesheet" href="styles/about-us.css">';
     echo '<link rel="stylesheet" href="styles/footer.css">';
     echo '<link rel="stylesheet" href="styles/our-lessons.css">';
+    echo '<link rel="stylesheet" href="styles/master.css">';
+    echo '<link rel="stylesheet" href="styles/meet-our-teachers.css">';
+    echo '<link rel="stylesheet" href="what-our-students-say.css">';
     ?>
 </head>
 

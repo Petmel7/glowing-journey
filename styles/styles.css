@@ -5,6 +5,7 @@
     --white-color: #FFFFFF;
     --custom-color: rgba(146, 147, 148, 1);
     --text-color: rgba(18, 20, 23, 0.50);
+    --decoration-color: #BEE8CC;
 }
 
 body {
@@ -18,145 +19,68 @@ body {
     margin-right: auto;
 }
 
-h1, h2, h3, div, ul, li, p, a {
+h1, h2, h3, div, ul, li, p, a, span {
     list-style-type: none;
     text-decoration: none;
     margin: 0;
     padding: 0;
 }
 
-/* Master */
+/* What-our-students-say */
 
-.master {
-    max-width: 1312px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 64px;
-    border-radius: 30px;
-    margin-bottom: 150px;
-    background: linear-gradient(85deg, #4DC274 2.25%, #BEE8CC 131.25%);
-}
-
-.master-title {
-    font-size: 60px;
-    width: 800px;
-    margin-bottom: 193px;
-    color: var(--white-color);
-}
-
-.master-title-language {
-    color: #BEE8CC;
-}
-
-.master-title-power {
-    font-size: 40px;
-    padding-bottom: 42px; 
-    color: var(--primary-color);   
-}
-
-.master-block {
-    margin-bottom: 40px;
-}
-
-.checkbox {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    background-color: var(--white-color);
-    border-radius: 30px;
-    padding: 64px 96px;
-}
-
-/* =============================== */
-
-/* CSS Для чекбоксу */
-
-.flex-container {
+.students {
     display: flex;
+    margin-bottom: 196px;
 }
 
-.test {
-    width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        padding: 5px;
-        background-color: var(--accent-color);
-}
-
-.checkbox-container {
-    /* display: flex;
-    align-items: center; */
-    /* position: relative; */
-    /* display: inline-block; */
-
-    /* display: grid; */
-    /* grid-template-columns: auto 1fr; */
-    /* display: grid;
-    grid-template-columns: repeat(1, 1fr); */
-}
-
-input[type="checkbox"] {
+.students-decoration {
+    width: 177px;
+    height: 20px;
+    background-color: var(--decoration-color);
     position: absolute;
-    display: none;
-    cursor: pointer;
+    transform: translate(-18%, -100%);
+    border-radius: 10px;
 }
 
-label {
-    cursor: pointer;
+.students-children {
+    width: 373px;
+    background-color: var(--secondary-color);
+    padding: 32px 16px 64px;
+    border-radius: 30px;
 }
 
-.custom-checkbox {
-    /* width: 20px;
-    height: 20px; */
-    fill: var(--white-color);
-    transition: fill 0.3s ease;
-    /* background-color: var(--accent-color); */
+.students-children:not(:last-child) {
+    margin-right: 32px;
 }
 
-input[type="checkbox"]:checked+label .custom-checkbox {
-    fill: var(--primary-color);
+.students-block {
+    background-color: var(--accent-color);
+    display: flex;
+    border-radius: 15px;
+    padding: 14px;
+    margin-bottom: 32px;
+
 }
 
-/* ============================= */
-
-.master-checkbox {
-    /* display: flex; */
-    /* display: grid;
-    grid-template-columns: repeat(1, 1fr); */
-    width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        padding: 5px;
+.students-image {
+    margin-right: 8px;
 }
 
-.master-checkbox-text {
+.students-name {
     font-size: 20px;
     font-weight: 700;
-    display: inline-block;
-}
-
-.master-background {
-    
-}
-
-.master-background-image {
-    background-image: url(../images.png/tall\ stack\ of\ books.png);
-    /* width: 251px;
-    height: 303px; */
-    width: 291px;
-    height: 343px;
-    margin-left: auto;
-    background-size: cover;
-    background-position: center center;
-}
-
-.master-button {
-    padding: 16px 64px;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 12px;
     color: var(--white-color);
-    background-color: var(--accent-color);
-    cursor: pointer;
-    border: transparent;
+}
+
+.students-status {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.50);;
+}
+
+.students-text {
+    padding: 0 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
 }
