@@ -26,6 +26,9 @@
     font-size: 18px;
     font-weight: 400;
     color: var(--text-color);
+    max-width: 670px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .our-lessons-list {

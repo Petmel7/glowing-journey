@@ -27,21 +27,32 @@
     color: rgba(18, 20, 23, 0.50);
     font-size: 18px;
     font-weight: 400;
+    max-width: 670px;
+    margin: 0 auto;
+    /* word-wrap: break-word; */
+    text-align: center;
 }
+
+
 
 .list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
+    /* gap: 5%; */
     margin-bottom: 100px;
 }
 
 .list-children {
     background-color: var(--secondary-color);
-    width: 373px;
+    width: 343px;
+    /* max-width: 343px; */
+    /* padding: 8% 5%; */
+    /* width: 100%; */
     border-radius: 30px;
-    padding: 20px;
-
+    padding: 32px 20px;
+    /* aspect-ratio: 3/1; */
+    /* aspect-ratio: 40/10; */
 }
 
 .list-children-number {
@@ -49,11 +60,13 @@
     font-size: 28px;
     font-weight: 700;
     line-height: 32px;
+    margin-bottom: 16px;
 }
 
 .list-children-text {
     font-size: 20px;
     font-weight: 700;
+    /* aspect-ratio: 40/10; */
 }
 
 .list-children:nth-child(2),
@@ -66,17 +79,13 @@
     margin-bottom: 0;
 }
 
-/* .about-background {
-    
-} */
-
 .about-background-image {
     background-image: url(../images.png/memoji.png);
-    width: 290px;
-    height: 290px;
+    max-width: 368px;
+    /* padding: 47%; */
+    aspect-ratio: 1/1;
     background-size: cover;
     background-position: center center;
     background-color: var(--accent-color);
     border-radius: 30px;
-
 }

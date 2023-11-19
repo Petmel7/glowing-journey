@@ -9,19 +9,19 @@
     <div class=" list">
         <ul class="list">
             <li class="list-children">
-                <span class="list-children-number">01</span>
+                <p class="list-children-number">01</p>
                 <p class="list-children-text">Expert, innovative teaching staff</p>
             </li>
             <li class="list-children">
-                <span class="list-children-number">02</span>
+                <p class="list-children-number">02</p>
                 <p class="list-children-text">Wide range of course levels and options</p>
             </li>
             <li class="list-children">
-                <span class="list-children-number">03</span>
+                <p class="list-children-number">03</p>
                 <p class="list-children-text">Multicultural learning environment</p>
             </li>
             <li class="list-children">
-                <span class="list-children-number">04</span>
+                <p class="list-children-number">04</p>
                 <p class="list-children-text">Comprehensive language support services</p>
             </li>
         </ul>

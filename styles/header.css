@@ -11,7 +11,7 @@
 }
 
 .nav {
-    padding: 20px 128px;
+    padding: 20px 0;
 }
 
 .header {
@@ -24,11 +24,14 @@
     padding: 5px;
 }
 
-.header .header-nav .header-nav-list {
+.header-nav-list {
     color: var(--primary-color);
-    margin-right: 20px;
     font-size: 14px;
     font-weight: 600;
+}
+
+.header-nav:not(:last-child) {
+    margin-right: 20px;
 }
 
 .header-fill {
