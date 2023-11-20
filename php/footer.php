@@ -68,6 +68,7 @@
     </footer>
     <?php
     echo '<script src="php/index.js"></script>';
+    echo '<script src="php/modal.js"></script>';
     ?>
     </body>
 

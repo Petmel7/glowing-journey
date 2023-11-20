@@ -14,7 +14,7 @@
                         <label class="master-checkbox">
                             <input class="master-checkbox-input" type="checkbox" id="checkbox1" name="">
                             <div class="flex-container">
-                                <div class="test">
+                                <div class="svg-container">
                                     <svg class="custom-checkbox" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                         <use href="./images.svg/symbol-defs.svg#icon-check"></use>
                                     </svg>
@@ -29,7 +29,7 @@
                         <label class="master-checkbox">
                             <input class="master-checkbox-input" type="checkbox" id="checkbox2" name="">
                             <div class="flex-container">
-                                <div class="test">
+                                <div class="svg-container">
                                     <svg class="custom-checkbox" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                         <use href="./images.svg/symbol-defs.svg#icon-check"></use>
                                     </svg>
@@ -44,7 +44,7 @@
                         <label class="master-checkbox">
                             <input class="master-checkbox-input" type="checkbox" id="checkbox3" name="">
                             <div class=" flex-container">
-                                <div class="test">
+                                <div class="svg-container">
                                     <svg class="custom-checkbox" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                         <use href=" ./images.svg/symbol-defs.svg#icon-check"></use>
                                     </svg>
@@ -62,6 +62,9 @@
             </div>
 
             <div class="master-background-image"></div>
+
         </div>
+        <div class="background-decoration-two"></div>
+        <div class="background-decoration-one"></div>
     </div>
 </section>

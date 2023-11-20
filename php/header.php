@@ -13,6 +13,7 @@
         }
     </style>
     <?php
+    echo '<link rel="stylesheet" href="styles/modal.css">';
     echo '<link rel="stylesheet" href="styles/styles.css">';
     echo '<link rel="stylesheet" href="styles/header.css">';
     echo '<link rel="stylesheet" href="styles/hero.css">';
@@ -21,7 +22,7 @@
     echo '<link rel="stylesheet" href="styles/our-lessons.css">';
     echo '<link rel="stylesheet" href="styles/master.css">';
     echo '<link rel="stylesheet" href="styles/meet-our-teachers.css">';
-    echo '<link rel="stylesheet" href="what-our-students-say.css">';
+    echo '<link rel="stylesheet" href="styles/what-our-students-say.css">';
     ?>
 </head>
 

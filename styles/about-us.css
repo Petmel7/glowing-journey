@@ -29,7 +29,6 @@
     font-weight: 400;
     max-width: 670px;
     margin: 0 auto;
-    /* word-wrap: break-word; */
     text-align: center;
 }
 
@@ -39,20 +38,19 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
-    /* gap: 5%; */
     margin-bottom: 100px;
+
+    /* display: flex;
+    flex-wrap: wrap;
+    width: 850px; */
 }
 
 .list-children {
     background-color: var(--secondary-color);
     width: 343px;
-    /* max-width: 343px; */
-    /* padding: 8% 5%; */
-    /* width: 100%; */
     border-radius: 30px;
     padding: 32px 20px;
-    /* aspect-ratio: 3/1; */
-    /* aspect-ratio: 40/10; */
+
 }
 
 .list-children-number {
@@ -66,24 +64,13 @@
 .list-children-text {
     font-size: 20px;
     font-weight: 700;
-    /* aspect-ratio: 40/10; */
-}
-
-.list-children:nth-child(2),
-.list-children:nth-child(4) {
-    margin-right: 0;
-}
-
-.list-children:nth-child(3),
-.list-children:nth-child(4) {
-    margin-bottom: 0;
+    width: 315px;
 }
 
 .about-background-image {
     background-image: url(../images.png/memoji.png);
     max-width: 368px;
-    /* padding: 47%; */
-    aspect-ratio: 1/1;
+    height: 362px;
     background-size: cover;
     background-position: center center;
     background-color: var(--accent-color);

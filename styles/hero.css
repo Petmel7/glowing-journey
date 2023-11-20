@@ -1,13 +1,15 @@
 /* Hero */
 
 .hero {
+    position: relative;
     background-image: url(../images.png/block.png);
     max-width: 1312px;
+    width: 100%;
+    /* aspect-ratio: 2 / 1; */
     margin-left: auto;
     margin-right: auto;
     padding-top: 12%;
     padding-bottom: 12%;
-    /* aspect-ratio: 1 / 1; */
     background-size: cover;
     background-position: center center;
     border-radius: 30px;
@@ -36,3 +38,45 @@
     font-size: 18px;
     font-weight: 700;
 }
+
+.hero-svg {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+        bottom: 0;
+        left: 93%;
+        transform: translateY(-70%);
+}
+
+
+
+
+
+/* .overlay {
+
+    @media screen and (max-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (max-width: 767px) {
+        background-image: linear-gradient(to left,
+                rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder-mobile.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+        background-image: linear-gradient(to left,
+                rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder-tablet.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        background-image: linear-gradient(to left,
+                rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+} */
