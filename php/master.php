@@ -1,4 +1,5 @@
 <section class="master">
+
     <div class="container">
 
         <h1 class="master-title">Master the <span class="master-title-language">Language</span> with Our English Package!</h1>
@@ -57,14 +58,15 @@
 
                 </div>
 
-                <button class="master-button" type="button">Leave an application</button>
+                <button class="general-button" id="openModal">Leave an application</button>
 
             </div>
 
             <div class="master-background-image"></div>
 
         </div>
-        <div class="background-decoration-two"></div>
-        <div class="background-decoration-one"></div>
+        <!-- <div class="background-decoration-two"></div>
+        <div class="background-decoration-one"></div> -->
     </div>
+
 </section>

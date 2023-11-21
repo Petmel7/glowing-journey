@@ -6,23 +6,48 @@
     --custom-color: rgba(146, 147, 148, 1);
     --text-color: rgba(18, 20, 23, 0.50);
     --decoration-color: #BEE8CC;
+
+    --font-bold: 700;
+    --font-middle: 600;
+    --font-normal: 400;
 }
 
 body {
+    font-family: 'Manrope', sans-serif;
     background-color: var(--white-color);
     margin: 0;
 }
 
 .container {
-    max-width: 1200px;
-    width: 100%;
+    width: 1230px;
+    padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
+    background-color: aqua;
 }
 
-h1, h2, h3, div, ul, li, p, a, span {
+h1,
+h2,
+h3,
+div,
+ul,
+li,
+p,
+a,
+span {
     list-style-type: none;
     text-decoration: none;
     margin: 0;
     padding: 0;
+}
+
+.general-button {
+    cursor: pointer;
+    border: transparent;
+    font-size: 18px;
+    border-radius: 12px;
+    padding: 16px 64px;
+    font-weight: var(--font-bold);
+    color: var(--white-color);
+    background-color: var(--accent-color);
 }

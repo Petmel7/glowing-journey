@@ -9,6 +9,7 @@
     background-color: var(--primary-color);
 }
 
+
 .footer {
     padding: 64px 0;
 }
@@ -16,7 +17,7 @@
 .footer-logo {
     color: var(--white-color);
     font-size: 20px;
-    font-weight: 700;
+    font-weight: var(--font-bold);
 }
 
 .footer .logo-footer {
@@ -30,14 +31,14 @@
 .phone-address {
     color: var(--custom-color);
     font-size: 14px;
-    font-weight: 400;
+    font-weight: var(--font-normal);
     margin-bottom: 4px;
 }
 
 .number-address {
     color: var(--white-color);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: var(--font-middle);
 }
 
 .nav-children:not(:last-child) {
@@ -47,7 +48,7 @@
 .nav-children-list {
     color: var(--white-color);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: var(--font-middle);
 }
 
 .footer-date {
@@ -61,5 +62,5 @@
 .footer-date-text {
     color: var(--custom-color);
     font-size: 14px;
-    font-weight: 400;
+    font-weight: var(--font-normal);
 }

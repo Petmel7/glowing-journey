@@ -14,7 +14,7 @@
             <div>
                 <p class="our-lessons-list-children-text">This plan offers an opportunity for learners to engage in collaborative language exercises and group activities, boosting their conversational skills and confidence in using English.</p>
             </div>
-            <button class="our-lessons-button" type="button">Leave an application</button>
+            <button class="general-button" id="openModal">Leave an application</button>
         </li>
         <li class="our-lessons-children our-lessons-list-children">
             <p class="study-mode">Standart</p>
@@ -24,7 +24,7 @@
             <div>
                 <p class="our-lessons-list-children-text">Our standard package provides a balanced learning approach that covers all key areas of English language - reading, writing, listening, and speaking. It is a set of basic knowledge and skills.</p>
             </div>
-            <button class="our-lessons-button" type="button">Leave an application</button>
+            <button class="our-lessons-button general-button" id="openModal">Leave an application</button>
         </li>
         <li class="our-lessons-list-children">
             <p class="study-mode">Individual</p>
@@ -34,7 +34,7 @@
             <div>
                 <p class="our-lessons-list-children-text">We offer a tailored learning experience with individualized instruction that focuses on a learner's specific language goals and challenges, offering personal feedback.</p>
             </div>
-            <button class="our-lessons-button" type="button">Leave an application</button>
+            <button class="general-button" id="openModal">Leave an application</button>
         </li>
     </ul>
 </section>

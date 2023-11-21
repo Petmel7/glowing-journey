@@ -40,13 +40,13 @@
 
 .students-name {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: var(--font-bold);
     color: var(--white-color);
 }
 
 .students-status {
     font-size: 12px;
-    font-weight: 400;
+    font-weight: var(--font-normal);
     color: rgba(255, 255, 255, 0.50);
     ;
 }
@@ -54,6 +54,6 @@
 .students-text {
     padding: 0 16px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: var(--font-normal);
     color: var(--text-color);
 }

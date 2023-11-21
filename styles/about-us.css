@@ -7,7 +7,7 @@
 
 .about-title {
     font-size: 40px;
-    font-weight: 700;
+    font-weight: var(--font-bold);
     color: #88898B;
     margin-bottom: 16px;
     z-index: 1;
@@ -26,7 +26,7 @@
 .about-title-text {
     color: rgba(18, 20, 23, 0.50);
     font-size: 18px;
-    font-weight: 400;
+    font-weight: var(--font-normal);
     max-width: 670px;
     margin: 0 auto;
     text-align: center;
@@ -56,14 +56,14 @@
 .list-children-number {
     color: var(--accent-color);
     font-size: 28px;
-    font-weight: 700;
+    font-weight: var(--font-bold);
     line-height: 32px;
     margin-bottom: 16px;
 }
 
 .list-children-text {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: var(--font-bold);
     width: 315px;
 }
 

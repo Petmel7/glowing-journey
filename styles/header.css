@@ -3,7 +3,7 @@
 .logo {
     color: var(--primary-color);
     font-size: 20px;
-    font-weight: 700;
+    font-weight: var(--font-bold);
 }
 
 .logo-excellence {
@@ -27,7 +27,7 @@
 .header-nav-list {
     color: var(--primary-color);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: var(--font-middle);
 }
 
 .header-nav:not(:last-child) {

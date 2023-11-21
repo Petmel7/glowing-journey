@@ -29,12 +29,12 @@
 
 .teachers-name {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: var(--font-bold);
     margin-bottom: 8px;
 }
 
 .teachers-text {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: var(--font-normal);
     color: var(--text-color);
 }
