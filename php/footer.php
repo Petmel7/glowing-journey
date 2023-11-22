@@ -1,4 +1,5 @@
     <footer class="background">
+        <!-- <div class="background"></div> -->
         <div class="container">
 
             <div class="footer">
@@ -70,6 +71,7 @@
                 <p class="footer-date-text">Privacy Policy Terms of Service</p>
             </div>
         </div>
+
     </footer>
     <?php
     echo '<script src="php/index.js"></script>';

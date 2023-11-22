@@ -7,7 +7,8 @@
     </div>
 
     <div class="list">
-        <ul class="list">
+
+        <ul class="list-flex">
             <li class="list-children">
                 <p class="list-children-number">01</p>
                 <p class="list-children-text">Expert, innovative teaching staff</p>
@@ -25,8 +26,8 @@
                 <p class="list-children-text">Comprehensive language support services</p>
             </li>
         </ul>
-        <div class="about-background">
-            <div class="about-background-image"></div>
-        </div>
+
+        <div class="about-background-image"></div>
     </div>
+
 </section>
