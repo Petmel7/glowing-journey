@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container students-container">
     <div class="our-lessons">
         <h3 class="our-lessons-title">What our students say</h3>
         <span class="students-decoration"></span>

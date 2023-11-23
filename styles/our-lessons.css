@@ -1,5 +1,9 @@
 /* Our-lessons */
 
+.our-container {
+    margin-bottom: 150px;
+}
+
 .our-lessons {
     margin-bottom: 16px;
     text-align: center;
@@ -33,7 +37,6 @@
 
 .our-lessons-list {
     display: flex;
-    margin-bottom: 150px;
 }
 
 @media screen and (max-width: 704px) {
@@ -43,7 +46,7 @@
     }
 
     .our-lessons-list-children {
-        width: 300px;
+        max-width: 284px;
         height: 404px;
         padding: 32 16px;
     }
@@ -53,7 +56,7 @@
     }
 }
 
-@media screen and (min-width: 705px) {
+@media screen and (min-width: 704px) {
     .our-lessons-list-children {
         width: 373px;
         padding: 32px;

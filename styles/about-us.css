@@ -5,6 +5,10 @@
     margin-bottom: 64px;
 }
 
+.about-container {
+    margin-bottom: 100px;
+}
+
 .about-title {
     font-size: 40px;
     font-weight: var(--font-bold);
@@ -32,12 +36,11 @@
     text-align: center;
 }
 
-@media screen and (min-width: 705px) {
+@media screen and (min-width: 704px) {
     .list, .list-flex {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 32px;
-        margin-bottom: 100px;
     }
 }
 

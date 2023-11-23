@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container our-container">
     <div class="our-lessons">
         <h3 class="our-lessons-title">Our lessons</h3>
         <span class="our-decoration"></span>

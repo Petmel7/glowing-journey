@@ -1,8 +1,50 @@
 /* What-our-students-say */
 
-.students {
-    display: flex;
-    margin-bottom: 196px;
+.students-container {
+    margin-bottom: 150px;
+}
+
+/* .students {
+    
+} */
+
+@media screen and (min-width: 704px) {
+    .students {
+        display: flex;
+    }
+
+    .students-children {
+        width: 373px;
+        /* height: 326px; */
+        padding: 32px 16px 64px;
+    }
+
+    .students-children:not(:last-child) {
+        margin-right: 32px;
+    }
+}
+
+@media screen and (max-width: 704px) {
+    .students {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .students-children {
+        width: 300px;
+        height: 250px;
+        padding: 32px 16px 40px;
+    }
+
+    .students-children:nth-child(1) {
+        margin: 0 32px 32px 0;
+    }
+
+    .students-children:nth-child(3) {
+        display: none;
+    }
+
 }
 
 .students-decoration {
@@ -15,15 +57,15 @@
 }
 
 .students-children {
-    width: 373px;
+    /* width: 373px; */
     background-color: var(--secondary-color);
-    padding: 32px 16px 64px;
+    /* padding: 32px 16px 64px; */
     border-radius: 30px;
 }
 
-.students-children:not(:last-child) {
+/* .students-children:not(:last-child) {
     margin-right: 32px;
-}
+} */
 
 .students-block {
     background-color: var(--accent-color);
@@ -31,7 +73,6 @@
     border-radius: 15px;
     padding: 14px;
     margin-bottom: 32px;
-
 }
 
 .students-image {

@@ -12,6 +12,12 @@
     background: linear-gradient(85deg, #4DC274 2.25%, #BEE8CC 131.25%);
 }
 
+@media screen and (max-width: 1200px) and (min-width: 704px) {
+    .master {
+        width: 1215px;
+    }
+}
+
 /* .master-container {
     width: 1312px;
     margin-left: auto;
@@ -21,7 +27,7 @@
 
 .master-title {
     font-size: 60px;
-    width: 800px;
+    /* width: 800px; */
     margin-bottom: 193px;
     color: var(--white-color);
 }

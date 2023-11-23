@@ -1,5 +1,9 @@
 /* Meet-our-teachers */
 
+.teachers-container {
+    margin-bottom: 150px;
+}
+
 .lesons-decoration {
     width: 170px;
     height: 20px;
@@ -10,17 +14,43 @@
 }
 
 .teachers {
-    display: flex;
     text-align: center;
-    margin-bottom: 150px;
+}
+
+@media screen and (min-width: 704px) {
+    .teachers {
+        display: flex;
+    }
+
+    .teachers-children:not(:last-child) {
+        margin-right: 32px;
+    }
+}
+
+@media screen and (max-width: 704px) {
+    .teachers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .teachers-children {
+        margin-right: 32px;
+        margin-bottom: 32px;
+    }
+    
+    .teachers-children:nth-child(2n) {
+        margin-right: 0;
+    }
+    
+    .teachers-children:nth-child(n+3) {
+        margin-bottom: 0;
+    }
 }
 
 .teachers-children {
     border-radius: 50%;
-}
-
-.teachers-children:not(:last-child) {
-    margin-right: 32px;
+    width: 300px;
 }
 
 .teachers-images {

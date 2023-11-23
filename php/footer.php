@@ -17,7 +17,7 @@
                 </div>
 
                 <nav>
-                    <ul class="nav">
+                    <ul class="nav-footer">
                         <li class="nav-children">
                             <a class="nav-children-list" href="">About us</a>
                         </li>

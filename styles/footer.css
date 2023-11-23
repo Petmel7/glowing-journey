@@ -10,12 +10,11 @@
     
 }
 
-/* @media screen and (max-width: 1264) {
+@media screen and (max-width: 1200px) and (min-width: 704px) {
     .background {
-        width: 1200px;
-        display: none;
+        width: 1215px;
     }
-} */
+}
 
 .footer {
     padding: 64px 0;
