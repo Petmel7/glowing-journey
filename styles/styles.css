@@ -18,82 +18,19 @@ body {
     margin: 0;
 }
 
-/* .container {
-    width: 1230px;
-    padding: 0 15px;
-    margin: 0 auto;
-    border: 5px solid aqua;
-}
-
-@media screen and (max-width: 704px) {
-    .container {
-        width: 704px;
-    }
-}
-
-@media screen and (max-width: 335px) {
-    .container {
-        width: 335px;
-    }
-} */
-
-/* .container {
-    max-width: 428px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 5px solid aqua;
-}
-
-
-@media screen and (min-width: 704px) {
-    .container {
-        max-width: 704px;
-    }
-}
-
-@media screen and (min-width: 1230px) {
-    .container {
-        max-width: 1230px;
-    }
-} */
-
-/* .container {
-    width: 90%;
-
-    max-width: 1200px;
-
-    margin: 0 auto;
-
-    border: 5px solid aqua;
-}
-
-@media screen and (max-width: 704px) {
-    .container {
-        width: 95%;
-        
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .container {
-        width: 1100px;
-        
-    }
-} */
-
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    /* border: 5px solid aqua; */
+    padding: 0 15px;
+    box-sizing: border-box;
+    border: 5px solid #4DC274
 }
 
 @media screen and (max-width: 1200px) {
     .container {
-        width: 1200px;
-        /* width: 95%; */
+        /* width: 1200px; */
+        width: 95%;
     }
 }
 

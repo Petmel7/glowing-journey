@@ -16,11 +16,11 @@
     margin-left: auto;
 }
 
-@media screen and (max-width: 1200px) and (min-width: 704px) {
+/* @media screen and (max-width: 1200px) and (min-width: 704px) {
     .hero {
         width: 1215px;
     }
-}
+} */
 
 @media screen and (max-width: 704px) {
     .hero {
