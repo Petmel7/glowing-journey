@@ -22,10 +22,10 @@
     }
 } */
 
-@media screen and (max-width: 704px) {
+@media screen and (max-width: 768px) {
     .hero {
         background-image: url(../images.png/block-tablet.png);
-        width: 704px;
+        width: 768px;
         padding-top: 50%;
         padding-bottom: 50%;
     }

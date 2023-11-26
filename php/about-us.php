@@ -16,16 +16,16 @@
             </div>
             <div class="about-block">
                 <div class="about-block-p">
-                    <p class="about-number">03</p>
-                    <p class="about-text">Multicultural learning environment</p>
+                    <p class="about-number">02</p>
+                    <p class="about-text">Wide range of course levels and options</p>
                 </div>
             </div>
         </div>
-        <div class="about-flex-column">
+        <div class="too about-flex-column">
             <div class="about-block">
                 <div class="about-block-p">
-                    <p class="about-number">02</p>
-                    <p class="about-text">Wide range of course levels and options</p>
+                    <p class="about-number">03</p>
+                    <p class="about-text">Multicultural learning environment</p>
                 </div>
             </div>
             <div class="about-block">
@@ -36,6 +36,44 @@
             </div>
         </div>
         <div class="about-background-image"></div>
+    </div>
+
+    <div class="about-flex-container-two">
+
+        <div class="about-flex-column">
+            <div class="about-block">
+                <div class="about-block-p">
+                    <p class="about-number">01</p>
+                    <p class="about-text">Expert, innovative teaching staff</p>
+                </div>
+            </div>
+            <div class="about-block">
+                <div class="about-block-p">
+                    <p class="about-number">02</p>
+                    <p class="about-text">Wide range of course levels and options</p>
+                </div>
+            </div>
+
+            <div class="about-block">
+                <div class="about-block-p">
+                    <p class="about-number">03</p>
+                    <p class="about-text">Multicultural learning environment</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+
+            <div class="about-background-image"></div>
+
+            <div class="about-block">
+                <div class="about-block-p">
+                    <p class="about-number">04</p>
+                    <p class="about-text">Comprehensive language support services</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 </section>
