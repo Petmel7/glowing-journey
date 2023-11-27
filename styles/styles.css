@@ -27,21 +27,16 @@ body {
     border: 5px solid #4DC274
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1023px) {
     .container {
-        width: 95%;
+        width: 768px
     }
-}
+} */
 
 @media screen and (max-width: 768px) {
     .container {
         width: 90%;
-    }
-}
-
-@media screen and (max-width: 335px) {
-    .container {
-        width: 85%;
+        /* max-width: 335px; */
     }
 }
 
@@ -63,7 +58,6 @@ span {
 .general-button {
     cursor: pointer;
     border: transparent;
-    font-size: 18px;
     border-radius: 12px;
     font-weight: var(--font-bold);
     color: var(--white-color);
@@ -74,9 +68,10 @@ span {
     border: 1px solid var(--white-color);
 }
 
-@media screen and (min-width: 704px) {
+@media screen and (min-width: 769px) {
     .general-button {
         padding: 16px 64px;
+        font-size: 16px;
     }
 
     .our-lessons-children .our-lessons-button {
@@ -84,9 +79,10 @@ span {
     }
 }
 
-@media screen and (max-width: 704px) {
+@media screen and (max-width: 768px) {
     .general-button {
         padding: 16px 59px;
+        font-size: 14px;
     }
 
     .our-lessons-children .our-lessons-button {

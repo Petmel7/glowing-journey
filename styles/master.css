@@ -5,30 +5,14 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    /* padding: 64px; */
     padding: 64 0;
     border-radius: 30px;
     margin-bottom: 150px;
     background: linear-gradient(85deg, #4DC274 2.25%, #BEE8CC 131.25%);
 }
 
-/* @media screen and (max-width: 1200px) and (min-width: 704px) {
-    .master {
-        width: 1215px;
-    }
-} */
-
-/* .master-container {
-    width: 1312px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: aqua;
-} */
-
 .master-title {
     font-size: 60px;
-    /* width: 800px; */
-    margin-bottom: 193px;
     color: var(--white-color);
 }
 
@@ -37,13 +21,12 @@
 }
 
 .master-title-power {
-    font-size: 40px;
+    font-size: 35px;
     padding-bottom: 42px;
     color: var(--primary-color);
 }
 
 .master-block {
-    /* width: 590px; */
     margin-bottom: 40px;
 }
 
@@ -53,10 +36,48 @@
 
     background-color: var(--white-color);
     border-radius: 30px;
-    padding: 64px 96px;
 
     position: relative;
     z-index: 1;
+}
+
+@media screen and (min-width: 1024px) {
+    .checkbox {
+        padding: 64px 96px;
+    }
+
+    .master-title {
+        margin-bottom: 193px;
+    }
+
+    .master-background-image {
+        width: 188px;
+        height: 343px;
+    }
+
+    .master-checkbox-text {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .master {
+        max-width: 768px;
+    }
+
+    .checkbox {
+        padding: 30px 20px;
+    }
+
+    .master-title {
+        margin-bottom: 84px;
+    }
+
+    .master-background-image {
+        width: 165px;
+        height: 300px;
+        background-position: 100% 100%;
+    }
 }
 
 .background-decoration-one,
@@ -121,15 +142,11 @@ input[type="checkbox"]:checked+.flex-container .custom-checkbox {
 /* ============================= */
 
 .master-checkbox-text {
-    font-size: 20px;
     font-weight: var(--font-bold);
-    /* display: inline-block; */
 }
 
 .master-background-image {
     background-image: url(../images.png/tall-stack-of-books.png);
-    width: 188px;
-    height: 343px;
     margin-left: auto;
     background-size: cover;
     background-position: center center;

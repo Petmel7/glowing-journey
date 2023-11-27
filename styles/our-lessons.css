@@ -39,31 +39,31 @@
     display: flex;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1024px) {
+    .our-lessons-list-children {
+        width: 373px;
+        padding: 20px;
+    }
+
+    .our-lessons-list-children:not(:last-child) {
+        margin-right: 32px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
     .our-lessons-list {
         display: flex;
         flex-wrap: wrap;
     }
 
     .our-lessons-list-children {
-        max-width: 284px;
-        height: 404px;
+        max-width: 314px;
+        height: 360px;
         padding: 32 16px;
     }
 
     .our-lessons-list-children:nth-child(1) {
         margin: 0 32px 32px 0;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .our-lessons-list-children {
-        width: 373px;
-        padding: 32px;
-    }
-
-    .our-lessons-list-children:not(:last-child) {
-        margin-right: 32px;
     }
 }
 
@@ -104,4 +104,5 @@
     font-size: 16px;
     font-weight: var(--font-normal);
     color: var(--text-color);
+    /* max-width: 250px; */
 }

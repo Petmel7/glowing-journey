@@ -50,9 +50,9 @@
                 </ul>
             </nav>
 
-            <div>
+            <div class="burger-menu">
                 <a href="#" class="">
-                    <svg class="burger-menu">
+                    <svg>
                         <use href="./images.svg/symbol-defs.svg#icon-Nav"></use>
                     </svg>
                 </a>

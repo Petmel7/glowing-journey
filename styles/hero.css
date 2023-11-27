@@ -16,18 +16,12 @@
     margin-left: auto;
 }
 
-/* @media screen and (max-width: 1200px) and (min-width: 704px) {
-    .hero {
-        width: 1215px;
-    }
-} */
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
     .hero {
         background-image: url(../images.png/block-tablet.png);
-        width: 768px;
-        padding-top: 50%;
-        padding-bottom: 50%;
+        max-width: 768px;
+        padding-top: 20%;
+        padding-bottom: 20%;
     }
 }
 
