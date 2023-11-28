@@ -19,7 +19,7 @@
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 429px) and (max-width: 1023px) {
     .students {
         display: flex;
         justify-content: center;

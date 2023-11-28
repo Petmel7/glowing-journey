@@ -19,7 +19,6 @@ body {
 }
 
 .container {
-    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
@@ -27,16 +26,21 @@ body {
     border: 5px solid #4DC274
 }
 
-/* @media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
     .container {
-        width: 768px
+        max-width: 768px
     }
-} */
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .container {
-        width: 90%;
-        /* max-width: 335px; */
+        width: 767px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .container {
+        width: 428px;
     }
 }
 

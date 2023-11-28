@@ -50,6 +50,20 @@
     }
 }
 
+/* @media screen and (min-width: 429px) and (max-width: 1023px) {
+    .our-lessons-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+} */
+
+@media screen and (max-width: 428px) {
+    .our-lessons-list {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 1023px) {
     .our-lessons-list {
         display: flex;

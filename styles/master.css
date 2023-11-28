@@ -60,7 +60,7 @@
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 429px) and (max-width: 1023px) {
     .master {
         max-width: 768px;
     }
@@ -77,6 +77,18 @@
         width: 165px;
         height: 300px;
         background-position: 100% 100%;
+    }
+}
+
+@media screen and (min-width: 429px) and (max-width: 767px) {
+    .master {
+        width: 767px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .master {
+        width: 428px;
     }
 }
 

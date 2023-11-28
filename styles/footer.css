@@ -10,6 +10,18 @@
     
 }
 
+@media screen and (min-width: 429px) and (max-width: 767px) {
+    .background {
+        width: 767px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .background {
+        width: 428px;
+    }
+}
+
 .footer {
     padding: 64px 0;
 }
