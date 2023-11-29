@@ -137,14 +137,28 @@
 }
 
 @media screen and (max-width: 428px) {
+    .about-title {
+        font-size: 32px;
+    }
+
     .about-flex-container-two {
         display: none;
     }
 
-        .about-block {
-            width: 100%;
-            height: 160px;
-        }
+    .about-block {
+        width: 100%;
+        height: 160px;
+    }
+
+    .about-decoration {
+        width: 40px;
+        height: 12px;
+        transform: translate(75%, -270%);
+    }
+
+    .about-container {
+        margin-bottom: 80px;
+    }
 }
 
 .about-number {

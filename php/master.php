@@ -6,7 +6,7 @@
 
         <div class="checkbox">
 
-            <div>
+            <div class="checkbox-test">
                 <h2 class="master-title-power">Power of English</h2>
 
                 <div class="master-block">
@@ -58,7 +58,9 @@
 
                 </div>
 
-                <button class="general-button" id="openModal">Leave an application</button>
+                <div class="master-button">
+                    <button class="general-button" id="openModal">Leave an application</button>
+                </div>
 
             </div>
 

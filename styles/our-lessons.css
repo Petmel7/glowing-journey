@@ -39,6 +39,8 @@
     display: flex;
 }
 
+/* ================================================ */
+
 @media screen and (min-width: 1024px) {
     .our-lessons-list-children {
         width: 373px;
@@ -50,19 +52,46 @@
     }
 }
 
-/* @media screen and (min-width: 429px) and (max-width: 1023px) {
-    .our-lessons-list {
-        display: flex;
-        flex-wrap: wrap;
+/* =============================================*/
+
+@media screen and (min-width: 429px) and (max-width: 1023px) {
+    .our-lessons-list-children:nth-child(1) {
+            margin: 0 32px 32px 0;
+        }
+
+    .our-lessons-list-children {
+            max-width: 314px;
     }
-} */
+}
+
+/* ========================================= */
 
 @media screen and (max-width: 428px) {
     .our-lessons-list {
         display: flex;
         flex-direction: column;
     }
+
+    .our-lessons-list-children:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .our-lessons-title {
+        font-size: 32px;
+    }
+
+    .our-decoration {
+        width: 120px;
+        height: 12px;
+        transform: translate(-23%, -120%);
+    }
+
+    .our-container {
+        margin-bottom: 80px;
+    }
 }
+
+/* ================================================ */
 
 @media screen and (max-width: 1023px) {
     .our-lessons-list {
@@ -71,15 +100,17 @@
     }
 
     .our-lessons-list-children {
-        max-width: 314px;
+        /* max-width: 314px; */
         height: 360px;
         padding: 32 16px;
     }
 
-    .our-lessons-list-children:nth-child(1) {
+    /* .our-lessons-list-children:nth-child(1) {
         margin: 0 32px 32px 0;
-    }
+    } */
 }
+
+/* ==================================================== */
 
 .our-lessons-list-children {
     border-radius: 30px;

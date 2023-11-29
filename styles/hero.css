@@ -25,6 +25,29 @@
     }
 }
 
+@media screen and (max-width: 428px) {
+    .hero {
+        background-image: url(../images.png/block.mobile.png);
+        max-width: 428px;
+        padding-top: 100%;
+        padding-bottom: 100%;
+        margin-bottom: 80px;
+
+        position: relative;
+    }
+
+    .hero-container {
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        width: 100%;
+    }
+
+    .hero-block {
+        margin-top: 0;
+    }
+}
+
 @media screen and (min-width: 429px) and (max-width: 767px) {
     .hero {
         width: 768px;
@@ -35,12 +58,36 @@
     .hero {
         width: 428px;
     }
+
+    .hero-title {
+        font-size: 38px;
+        max-width: 300px;
+    }
+
+    .hero-svg {
+        position: absolute;
+        bottom: -20%;
+        left: 90%;
+        /* transform: translateY(200%); */
+    }
+}
+
+@media screen and (min-width: 429px) {
+    .hero-title {
+        font-size: 60px;
+        max-width: 600px;
+    }
+
+    .hero-svg {
+        position: absolute;
+        bottom: 0;
+        left: 93%;
+        transform: translateY(-70%);
+    }
 }
 
 .hero-title {
     color: var(--white-color);
-    max-width: 600px;
-    font-size: 60px;
     margin-bottom: 30px;
     font-weight: var(--font-bold);
 }
@@ -52,8 +99,4 @@
 .hero-svg {
     width: 35px;
     height: 35px;
-    position: absolute;
-        bottom: 0;
-        left: 93%;
-        transform: translateY(-70%);
 }

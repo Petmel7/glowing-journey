@@ -28,7 +28,7 @@
 <body>
     <header class="container">
 
-        <div class="header">
+        <div class="header space-between">
             <a href="" class="logo">english<span class="logo-excellence">excellence</span>.</a>
 
             <nav class="nav">

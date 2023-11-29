@@ -31,15 +31,21 @@
 }
 
 .checkbox {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
     background-color: var(--white-color);
     border-radius: 30px;
-
-    position: relative;
-    z-index: 1;
 }
+
+@media screen and (min-width: 428px) {
+    .checkbox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        z-index: 1;
+    }
+    
+}
+
+/* ================================================= */
 
 @media screen and (min-width: 1024px) {
     .checkbox {
@@ -80,6 +86,8 @@
     }
 }
 
+/* =================================================== */
+
 @media screen and (min-width: 429px) and (max-width: 767px) {
     .master {
         width: 767px;
@@ -89,8 +97,28 @@
 @media screen and (max-width: 428px) {
     .master {
         width: 428px;
+        margin-bottom: 80px;
+    }
+
+    .master-title {
+        font-size: 38px;
+        margin-bottom: 65px;
+    }
+
+    .master-title-power {
+        font-size: 20px;
+    }
+
+    .checkbox-test {
+        padding: 20px;
+    }
+
+    .master-background-image {
+        display: none;
     }
 }
+
+/* =============================================================== */
 
 .background-decoration-one,
 .background-decoration-two {

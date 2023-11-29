@@ -17,6 +17,8 @@
     text-align: center;
 }
 
+/* ============================================ */
+
 @media screen and (min-width: 1024px) {
     .teachers {
         display: flex;
@@ -48,9 +50,38 @@
     }
 }
 
+@media screen and (max-width: 428px) {
+    .teachers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .teachers-children {
+        max-width: 180px;
+        padding: 10px;
+    }
+
+    .lesons-decoration {
+        width: 135px;
+        height: 12px;
+        transform: translate(4%, -130%);
+    }
+
+    .teachers-container {
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (min-width: 429px) {
+    .teachers-children {
+        width: 300px;
+    }
+}
+
+/* =================================================== */
+
 .teachers-children {
     border-radius: 50%;
-    width: 300px;
 }
 
 .teachers-images {

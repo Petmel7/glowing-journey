@@ -1,9 +1,9 @@
     <footer class="background">
-        <!-- <div class="background"></div> -->
+
         <div class="container">
 
             <div class="footer">
-                <div>
+                <div class="logo-block">
                     <div class="logo-footer">
                         <a href="" class="footer-logo">english<span class="logo-excellence">excellence</span>.</a>
                     </div>
@@ -68,7 +68,10 @@
         <div class="container">
             <div class="footer-date">
                 <p class="footer-date-text">&copy; <?php echo date("Y"); ?> English Excellence. All rights reserved.</p>
-                <p class="footer-date-text">Privacy Policy Terms of Service</p>
+                <div>
+                    <span class="footer-date-text">Privacy Policy</span>
+                    <span class="footer-date-text">Terms of Service</span>
+                </div>
             </div>
         </div>
 
