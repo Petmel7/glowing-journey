@@ -2,7 +2,7 @@
 
 .hero {
     position: relative;
-    background-image: url(../images.png/block.png);
+    background-image: url('../images.png/block.png');
     max-width: 1312px;
     width: 100%;
     padding-top: 12%;
@@ -18,7 +18,7 @@
 
 @media screen and (max-width: 1023px) {
     .hero {
-        background-image: url(../images.png/block-tablet.png);
+        background-image: url('../images.png/block-tablet.png');
         max-width: 768px;
         padding-top: 20%;
         padding-bottom: 20%;
@@ -27,11 +27,12 @@
 
 @media screen and (max-width: 428px) {
     .hero {
-        background-image: url(../images.png/block.mobile.png);
+        background-image: url('../images.png/block.mobile.png');
         max-width: 428px;
         padding-top: 100%;
         padding-bottom: 100%;
         margin-bottom: 80px;
+        border-radius: 16px;
 
         position: relative;
     }
@@ -68,7 +69,6 @@
         position: absolute;
         bottom: -20%;
         left: 90%;
-        /* transform: translateY(200%); */
     }
 }
 

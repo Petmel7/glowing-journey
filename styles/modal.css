@@ -26,9 +26,9 @@
     width: 32px;
     height: 32px;
     position: absolute;
-        top: 0;
-        left: 92%;
-        transform: translateY(50%);
+    top: 0;
+    left: 92%;
+    transform: translateY(50%);
 }
 
 .close:hover,

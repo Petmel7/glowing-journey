@@ -4,8 +4,6 @@
     margin-bottom: 150px;
 }
 
-/* =================================================== */
-
 @media screen and (min-width: 1024px) {
     .students {
         display: flex;
@@ -48,6 +46,7 @@
     .students-children {
         height: 250px;
         padding: 32px 16px 40px;
+        border-radius: 16px;
     }
     
     .students-children:not(:nth-child(3)) {
@@ -65,8 +64,6 @@
     }
 }
 
-/* ======================================================== */
-
 .students-decoration {
     background-color: var(--decoration-color);
     position: absolute;
@@ -79,11 +76,14 @@
         height: 20px;
         transform: translate(-18%, -100%);
     }
+
+    .students-children {
+        border-radius: 32px;
+    }
 }
 
 .students-children {
     background-color: var(--secondary-color);
-    border-radius: 30px;
 }
 
 .students-block {
@@ -116,4 +116,34 @@
     font-size: 16px;
     font-weight: var(--font-normal);
     color: var(--text-color);
+}
+
+
+
+
+
+
+
+
+
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    /* Прокрутка по горизонталі */
+    -webkit-overflow-scrolling: touch;
+    /* Покращення прокрутки для Safari */
+}
+
+.slide {
+    scroll-snap-align: start;
+    /* Вирівнювання слайдів */
+    flex: 0 0 auto;
+    /* width: 100%; */
+    /* Ширина слайдів */
+    padding: 0 10px;
+    /* Додайте відступи, які вам потрібно */
+    box-sizing: border-box;
+    /* Розрахунок ширини з врахуванням внутрішніх відступів */
 }

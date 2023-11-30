@@ -22,6 +22,7 @@
     echo '<link rel="stylesheet" href="styles/master.css">';
     echo '<link rel="stylesheet" href="styles/meet-our-teachers.css">';
     echo '<link rel="stylesheet" href="styles/what-our-students-say.css">';
+    echo '<link rel="stylesheet" href="styles/mobile-menu.css">';
     ?>
 </head>
 
@@ -30,6 +31,14 @@
 
         <div class="header space-between">
             <a href="" class="logo">english<span class="logo-excellence">excellence</span>.</a>
+
+            <div class="burger-menu">
+                <a href="#" class="burger-icon">
+                    <svg class="">
+                        <use href="./images.svg/symbol-defs.svg#icon-Nav"></use>
+                    </svg>
+                </a>
+            </div>
 
             <nav class="nav">
                 <ul class="header">
@@ -50,14 +59,6 @@
                     </li>
                 </ul>
             </nav>
-
-            <div class="burger-menu">
-                <a href="#" class="">
-                    <svg>
-                        <use href="./images.svg/symbol-defs.svg#icon-Nav"></use>
-                    </svg>
-                </a>
-            </div>
 
             <div class="display-none">
                 <ul class="header">

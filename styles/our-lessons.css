@@ -89,6 +89,10 @@
     .our-container {
         margin-bottom: 80px;
     }
+
+    .our-lessons-list-children {
+        border-radius: 16px;
+    }
 }
 
 /* ================================================ */
@@ -100,23 +104,23 @@
     }
 
     .our-lessons-list-children {
-        /* max-width: 314px; */
         height: 360px;
         padding: 32 16px;
     }
-
-    /* .our-lessons-list-children:nth-child(1) {
-        margin: 0 32px 32px 0;
-    } */
 }
 
 /* ==================================================== */
 
 .our-lessons-list-children {
-    border-radius: 30px;
     border: 1px solid var(--accent-color);
     background-color: var(--white-color);
     text-align: center;
+}
+
+@media screen and (min-width: 429px) {
+    .our-lessons-list-children {
+        border-radius: 30px;
+    }
 }
 
 .our-lessons-children {
@@ -149,5 +153,4 @@
     font-size: 16px;
     font-weight: var(--font-normal);
     color: var(--text-color);
-    /* max-width: 250px; */
 }

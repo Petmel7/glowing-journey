@@ -79,6 +79,8 @@
     <?php
     echo '<script src="php/index.js"></script>';
     echo '<script src="php/modal.js"></script>';
+    echo '<script src="php/mobile-menu.js"></script>';
+    echo '<script src="php/slider.js"></script>';
     ?>
     </body>
 

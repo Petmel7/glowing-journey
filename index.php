@@ -1,5 +1,7 @@
 <?php include 'php/modal.php'; ?>
 
+<?php include 'php/mobile-menu.php'; ?>
+
 <?php include 'php/header.php'; ?>
 
 <?php include 'php/hero.php'; ?>

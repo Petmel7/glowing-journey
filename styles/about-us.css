@@ -83,7 +83,7 @@
 .about-block {
     height: 160px;
     background-color: var(--secondary-color);
-    border-radius: 30px;
+    /* border-radius: 30px; */
 }
 
 @media screen and (min-width: 429px) and (max-width: 1023px) {
@@ -99,11 +99,13 @@
 }
 
 @media screen and (max-width: 1023px) {
+    .about-flex-container {
+        display: none;
+    }
+
     .about-block {
         display: flex;
         align-items: center;
-        max-width: 336px;
-        height: 160px;
     }
 
     .about-block:nth-child(3) {
@@ -121,33 +123,50 @@
     .about-block-p {
         padding: 20px;
     }
+}
+
+@media screen and (min-width: 429px) and (max-width: 1023px) {
+    .about-order {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-background-image {
+        order: -1;
+    }
+
+    .about-block {
+        max-width: 336px;
+        height: 160px;
+    }
 
     .about-background-image {
         max-width: 336px;
         height: 350px;
         margin-bottom: 32px;
     }
-
 }
 
-@media screen and (min-width: 429px) and (max-width: 1023px) {
-    .about-flex-container {
-        display: none;
-    }
-}
+
 
 @media screen and (max-width: 428px) {
     .about-title {
         font-size: 32px;
     }
 
-    .about-flex-container-two {
-        display: none;
+    .about-flex-column {
+        margin-bottom: 20px;
     }
 
     .about-block {
         width: 100%;
         height: 160px;
+        margin-bottom: 20px;
+        border-radius: 16px;
+    }
+
+    .about-text {
+        max-width: 300px;
     }
 
     .about-decoration {
@@ -159,9 +178,20 @@
     .about-container {
         margin-bottom: 80px;
     }
+
+    .item-4 {
+        order: 1;
+    }
+
+    .about-background-image {
+        width: 100%;
+        height: 370px;
+        border-radius: 16px;
+    }
 }
 
 .about-number {
+    font-size: 28px;
     color: var(--accent-color);
     font-weight: var(--font-bold);
 }
@@ -177,5 +207,11 @@
     background-image: url('../images.png/memoji.png');
     background-size: cover;
     background-position: center center;
-    border-radius: 30px;
+}
+
+@media screen and (min-width: 428px) {
+    .about-block,
+    .about-background-image {
+        border-radius: 30px;
+    }
 }
