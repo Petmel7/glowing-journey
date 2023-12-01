@@ -17,18 +17,27 @@
             <div class="teacher-options modal-form">
                 <h3 class="teacher-options--title">Choose a teacher</h3>
                 <label class="teacher-options--name">
-                    <input class="teacher-options--checkbox" type="checkbox" value="Maria"> Maria
+                    <input class="teacher-options--checkbox" type="checkbox" value="Maria" name="teacher">
+                    <span class="teacher-custom-checkbox"></span>
+                    Maria
                 </label>
                 <label class="teacher-options--name">
-                    <input class="teacher-options--checkbox" type="checkbox" value="Artem"> Artem
+                    <input class="teacher-options--checkbox" type="checkbox" value="Artem" name="teacher">
+                    <span class="teacher-custom-checkbox"></span>
+                    Artem
                 </label>
                 <label class="teacher-options--name">
-                    <input class="teacher-options--checkbox" type="checkbox" value="Ilona"> Ilona
+                    <input class="teacher-options--checkbox" type="checkbox" value="Ilona" name="teacher">
+                    <span class="teacher-custom-checkbox"></span>
+                    Ilona
                 </label>
                 <label class="teacher-options--name">
-                    <input class="teacher-options--checkbox" type="checkbox" value="Volodymyr"> Volodymyr
+                    <input class="teacher-options--checkbox" type="checkbox" value="Volodymyr" name="teacher">
+                    <span class="teacher-custom-checkbox"></span>
+                    Volodymyr
                 </label>
             </div>
+
             <button class="teacher-options--button" type=" submit">Send</button>
         </form>
         <p class="teacher-options--text">By clicking on the “Send” button, you agree to our Privacy Policy and allow Promodo to use this information for marketing purposes.</p>

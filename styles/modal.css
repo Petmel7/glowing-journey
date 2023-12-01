@@ -110,4 +110,57 @@
     font-size: 14px;
     font-weight: var(--font-normal);
     color: var(--text-color);
+    text-align: center;
+}
+
+/* Radio */
+
+.teacher-options--checkbox {
+    display: none;
+}
+
+.teacher-options--name {
+    display: inline-flex;
+    position: relative;
+}
+
+.teacher-custom-checkbox {
+    align-self: flex-start;
+    flex: 0 0 20px;
+    height: 20px;
+    border: 2px solid var(--custom-color);
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+}
+
+.teacher-options--name input[type="checkbox"]:checked+.teacher-custom-checkbox {
+    border-color: var(--accent-color);
+}
+
+.teacher-options--name input[type="checkbox"]:checked+.teacher-custom-checkbox::after {
+    transition: transform 0.2s ease 0s;
+    content: "";
+    position: absolute;
+    top: 5.5px;
+    left: 6px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 428px) {
+    .modal-content {
+        padding: 40px 20px;
+        width: 83%;
+    }
+
+    .close {
+        left: 88%;
+    }
+
+    .teacher-options--name input[type="checkbox"]:checked+.teacher-custom-checkbox::after {
+        top: 5.5px;
+        left: 5.5px;
+    }
 }

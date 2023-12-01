@@ -81,6 +81,7 @@
     echo '<script src="php/modal.js"></script>';
     echo '<script src="php/mobile-menu.js"></script>';
     echo '<script src="php/slider.js"></script>';
+    echo '<script src="php/radio.js"></script>';
     ?>
     </body>
 
