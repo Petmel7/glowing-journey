@@ -80,6 +80,7 @@
     echo '<script src="php/index.js"></script>';
     echo '<script src="php/modal.js"></script>';
     echo '<script src="php/mobile-menu.js"></script>';
+    echo '<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>';
     echo '<script src="php/slider.js"></script>';
     echo '<script src="php/radio.js"></script>';
     ?>

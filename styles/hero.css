@@ -55,6 +55,20 @@
     }
 }
 
+@media screen and (min-width: 429px) {
+    .hero-title {
+        font-size: 60px;
+        max-width: 600px;
+    }
+
+    .hero-svg {
+        position: absolute;
+        bottom: 0;
+        left: 93%;
+        transform: translateY(-70%);
+    }
+}
+
 @media screen and (max-width: 428px) {
     .hero {
         width: 428px;
@@ -67,22 +81,15 @@
 
     .hero-svg {
         position: absolute;
-        bottom: -20%;
-        left: 90%;
+        bottom: 0;
+        left: 89%;
+        transform: translateY(180%);
     }
 }
 
-@media screen and (min-width: 429px) {
-    .hero-title {
-        font-size: 60px;
-        max-width: 600px;
-    }
-
+@media screen and (max-width: 350px) {
     .hero-svg {
-        position: absolute;
-        bottom: 0;
-        left: 93%;
-        transform: translateY(-70%);
+        transform: translateY(160%);
     }
 }
 

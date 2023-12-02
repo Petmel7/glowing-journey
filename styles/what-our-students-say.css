@@ -52,7 +52,7 @@
 
     .students-children {
         border-radius: 32px;
-        margin-right: 32px;
+        margin-right: 25px;
     }
 }
 
@@ -98,15 +98,53 @@
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    /* Прокрутка по горизонталі */
     -webkit-overflow-scrolling: touch;
-    /* Покращення прокрутки для Safari */
 }
 
 .students-children {
     scroll-snap-align: start;
-    /* Вирівнювання слайдів */
     flex: 0 0 auto;
     box-sizing: border-box;
-    /* Розрахунок ширини з врахуванням внутрішніх відступів */
+}
+
+/* Карусель */
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.carousel-dot {
+    width: 14px;
+    height: 14px;
+    margin: 0 5px;
+    border: 2px solid rgba(243, 245, 246, 1);
+    border-radius: 50%;
+    background-color: rgba(243, 245, 246, 1);
+    cursor: pointer;
+}
+
+.carousel-dot.active {
+    border-color: var(--accent-color);
+}
+
+.carousel-dot.active::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    margin: 2px;
 }
