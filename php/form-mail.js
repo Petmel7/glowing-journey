@@ -71,11 +71,38 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault();
 
         let error = formValidate(form);
+
+        let formData = new FormData(form);
+        // formData.append('image', formImage.files[0]);
+
         if (error === 0) {
-            // Отримання даних форми та їх відправка
-            console.log('Form submitted successfully!');
+            // form.classList.add('_sending');
+            // console.log('response',
+            //     await fetch('sendmail.php', {
+            //     method: 'POST',
+            //     body: formData
+            // })
+            // );
+
+            let response = await fetch('sendmail.php', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                let result = await response.json();
+                console.log('result', result);
+                alert(result.message);
+                form.inerHTML = '';
+                form.reset();
+                form.classList.remove('_sending');
+            } else {
+                alert('Помилка');
+                form.classList.remove('_sending');
+            }
+            
         } else {
-            console.log('Form has errors. Please fill in all required fields.');
+            alert('Заповніть форму будь-ласка');
         }
     }
 

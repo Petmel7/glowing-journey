@@ -11,29 +11,31 @@
         <p class="modal-content--text">Please use the form below to contact us. Enter your name, email, and message, and we'll get back to you shortly.</p>
         <form id="form" class="modal-form">
             <input class="modal-form--input _req" type="text" placeholder="Name">
-            <input class="modal-form--input email _req" type="email" placeholder="Email">
+            <input class="modal-form--input _req email" type="email" placeholder="Email">
             <textarea class="modal-form--textarea" placeholder="Comment"></textarea>
+
+            <!-- <div class="backgraund-error"></div> -->
 
             <div class="teacher-options modal-form">
                 <h3 class="teacher-options--title">Choose a teacher</h3>
                 <label class="teacher-options--name">
-                    <input class="teacher-options--checkbox" type="checkbox" value="Maria" name="teacher">
-                    <span class="teacher-custom-checkbox _req"></span>
+                    <input class="teacher-options--checkbox " type="checkbox" value="Maria" name="teacher">
+                    <span class="teacher-custom-checkbox"></span>
                     Maria
                 </label>
                 <label class="teacher-options--name">
-                    <input class="teacher-options--checkbox" type="checkbox" value="Artem" name="teacher">
-                    <span class="teacher-custom-checkbox _req"></span>
+                    <input class="teacher-options--checkbox " type="checkbox" value="Artem" name="teacher">
+                    <span class="teacher-custom-checkbox"></span>
                     Artem
                 </label>
                 <label class="teacher-options--name">
-                    <input class="teacher-options--checkbox" type="checkbox" value="Ilona" name="teacher">
-                    <span class="teacher-custom-checkbox _req"></span>
+                    <input class="teacher-options--checkbox " type="checkbox" value="Ilona" name="teacher">
+                    <span class="teacher-custom-checkbox"></span>
                     Ilona
                 </label>
                 <label class="teacher-options--name">
                     <input class="teacher-options--checkbox " type="checkbox" value="Volodymyr" name="teacher">
-                    <span class="teacher-custom-checkbox _req"></span>
+                    <span class="teacher-custom-checkbox"></span>
                     Volodymyr
                 </label>
             </div>
