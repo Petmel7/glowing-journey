@@ -51,6 +51,7 @@
 
 
 
+
 // use PHPMailer\PHPMailer\PHPMailer;
 // use PHPMailer\PHPMailer\Exception;
 
@@ -80,62 +81,55 @@
 //     $body .= '<p><strong>Повідомлення: </strong>' . $_POST['message'] . '</p>';
 // }
 
+// $mail->Body = $body;
+
 // $message = '';
-// if (!$mail->send()) {
-//     $message = 'Помилка';
-// } else {
-//     $message = 'Дані відправленні!';
+// try {
+//     if (!$mail->send()) {
+//         throw new Exception('Помилка відправлення пошти: ' . $mail->ErrorInfo);
+//     } else {
+//         $message = 'Дані відправлені!';
+//     }
+// } catch (Exception $e) {
+//     $message = $e->getMessage();
 // }
 
 // $response = ['message' => $message];
-
 // header('Content-type: application/json');
 // echo json_encode($response);
 
-
-
-
-
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
 
 require 'phpmailer/PHPMailer-6.9.1/src/PHPMailer.php';
 require 'phpmailer/PHPMailer-6.9.1/src/Exception.php';
+require 'phpmailer/PHPMailer-6.9.1/src/SMTP.php';
 
-$mail = new PHPMailer(true);
-$mail->CharSet = 'UTF-8';
-$mail->setLanguage('ru', 'phpmailer/language');
-$mail->isHTML(true);
+try {
+    $mail = new PHPMailer(true);
+    $mail->isSMTP();  // Використовувати SMTP для відправлення
+    $mail->Host = 'smtp.gmail.com';  // SMTP сервер
+    $mail->SMTPAuth = true;   // Ввімкнути аутентифікацію SMTP
+    $mail->Username = 'olegsiuma@gmail.com'; // Ваша електронна пошта Gmail
+    $mail->Password = 'your_password'; // Ваш пароль Gmail або пароль згенерований Google App Passwords
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Шифрування (tls або ssl)
+    $mail->Port = 587; // Порт SMTP
 
-$mail->setFrom('olegsiuma@gmail.com', 'Oleg Siuma');
-$mail->addAddress('melychynpetro@gmail.com');
-$mail->Subject = 'Привіт!';
+    // Заголовок електронної пошти
+    $mail->setFrom('olegsiuma@gmail.com', 'Oleg');
+    $mail->addAddress('recipient@example.com', 'Recipient Name');
+    $mail->Subject = 'Subject of the email';
 
-$body = '<h1>Зустрічайте письмо!</h1>';
+    // Тіло електронної пошти
+    $mail->isHTML(true);
+    $mail->Body = '<h1>Hello, this is a test email.</h1>';
 
-if (!empty(trim($_POST['name']))) {
-    $body .= '<p><strong>Імя: </strong>' . $_POST['name'] . '</p>';
+    // Відправлення електронної пошти
+    $mail->send();
+    echo 'Email sent successfully';
+} catch (Exception $e) {
+    echo "Email sending failed. Error: {$mail->ErrorInfo}";
 }
 
-if (!empty(trim($_POST['email']))) {
-    $body .= '<p><strong>Email: </strong>' . $_POST['email'] . '</p>';
-}
-
-if (!empty(trim($_POST['message']))) {
-    $body .= '<p><strong>Повідомлення: </strong>' . $_POST['message'] . '</p>';
-}
-
-$mail->Body = $body;
-
-$message = '';
-if (!$mail->send()) {
-    $message = 'Помилка';
-} else {
-    $message = 'Дані відправленні!';
-}
-
-$response = ['message' => $message];
-
-header('Content-type: application/json');
-echo json_encode($response);
+?>;

@@ -63,9 +63,141 @@
 
 
 
+// document.addEventListener('DOMContentLoaded', function () {
+//     const form = document.getElementById("form");
+//     form.addEventListener('submit', formSend);
+
+//     async function formSend(event) {
+//         event.preventDefault();
+
+//         let error = formValidate(form);
+
+//         let formData = new FormData(form);
+
+//         if (error === 0) {
+//             form.classList.add('_sending');
+
+//             try {
+//                 const response = await fetch('sendmail.php', {
+//                     method: 'POST',
+//                     body: formData
+//                 });
+
+//                 if (response.ok) {
+//                     const result = await response.json();
+//                     console.log('result', result);
+//                     alert(result.message);
+//                     formPreview.innerHTML = '';
+//                     form.reset();
+//                     form.classList.remove('_sending');
+//                 } else {
+//                     alert('Помилка');
+//                     form.classList.remove('_sending');
+//                 }
+//             } catch (error) {
+//                 console.error('Error:', error);
+//                 alert('Сталася помилка під час відправки форми');
+//                 form.classList.remove('_sending');
+//             }
+        
+//         } else {
+//             alert('Заповніть форму будь-ласка');
+//         }
+//     }
+
+//     function formValidate(form) {
+//         let error = 0;
+//         let formReq = document.querySelectorAll('._req');
+
+//         for (let index = 0; index < formReq.length; index++) {
+//             const input = formReq[index];
+
+//             formRemoveError(input);
+
+//             if (input.classList.contains('email')) {
+//                 if (!emailTest(input)) {
+//                     formAddError(input);
+//                     error++;
+//                 }
+//             } else if (input.getAttribute("type") === "checkbox" && !input.checked) {
+//                 formAddError(input);
+//                 error++;
+//             } else {
+//                 if (input.value === '') {
+//                     formAddError(input);
+//                     error++;
+//                 }
+//             }
+//         }
+
+//         return error;
+//     }
+
+//     function formAddError(input) {
+//         input.classList.add('_error');
+//     }
+
+//     function formRemoveError(input) {
+//         input.classList.remove('_error');
+//     }
+
+//     function emailTest(input) {
+//         return /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(input.value);
+//     }
+// });
+
+
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById("form");
     form.addEventListener('submit', formSend);
+
+    // async function formSend(event) {
+    //     event.preventDefault();
+
+    //     let error = formValidate(form);
+
+    //     let formData = new FormData(form);
+
+    //     if (error === 0) {
+    //         form.classList.add('_sending');
+
+    //         try {
+    //             const response = await fetch('sendmail.php', {
+    //                 method: 'POST',
+    //                 body: formData
+    //             });
+
+    //             // console.log('response', response);
+    //             console.log('response.text', response.text());
+    //             console.log('response.body', response.body);
+
+    //             if (response.ok) {
+    //                 const result = await response.json();
+    //                 console.log('result', result);
+    //                 alert(result.message);
+    //                 form.reset();
+    //                 form.classList.remove('_sending');
+    //             } else {
+    //                 alert('Помилка');
+    //                 form.classList.remove('_sending');
+    //             }
+    //         } catch (error) {
+    //             console.error('Error:', error);
+    //             alert('Сталася помилка під час відправки форми');
+    //             form.classList.remove('_sending');
+    //         }
+        
+    //     } else {
+    //         alert('Заповніть форму будь-ласка');
+    //     }
+    // }
 
     async function formSend(event) {
         event.preventDefault();
@@ -73,38 +205,39 @@ document.addEventListener('DOMContentLoaded', function () {
         let error = formValidate(form);
 
         let formData = new FormData(form);
-        // formData.append('image', formImage.files[0]);
 
-        if (error === 0) {
-            // form.classList.add('_sending');
-            // console.log('response',
-            //     await fetch('sendmail.php', {
-            //     method: 'POST',
-            //     body: formData
-            // })
-            // );
+    if (error === 0) {
+        form.classList.add('_sending');
 
-            let response = await fetch('sendmail.php', {
+        try {
+            const response = await fetch('sendmail.php', {
                 method: 'POST',
                 body: formData
             });
 
+            const clonedResponse = response.clone(); // Клонуємо відповідь
+
             if (response.ok) {
-                let result = await response.json();
+                const result = await clonedResponse.json();
                 console.log('result', result);
                 alert(result.message);
-                form.inerHTML = '';
+                formPreview.innerHTML = '';
                 form.reset();
                 form.classList.remove('_sending');
             } else {
                 alert('Помилка');
                 form.classList.remove('_sending');
             }
-            
-        } else {
-            alert('Заповніть форму будь-ласка');
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Сталася помилка під час відправки форми');
+            form.classList.remove('_sending');
         }
+    } else {
+        alert('Заповніть форму будь-ласка');
     }
+}
+
 
     function formValidate(form) {
         let error = 0;
@@ -146,5 +279,6 @@ document.addEventListener('DOMContentLoaded', function () {
         return /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(input.value);
     }
 });
+
 
 
