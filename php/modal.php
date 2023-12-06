@@ -14,8 +14,6 @@
             <input class="modal-form--input _req email" type="email" placeholder="Email">
             <textarea class="modal-form--textarea" placeholder="Comment"></textarea>
 
-            <!-- <div class="backgraund-error"></div> -->
-
             <div class="teacher-options modal-form">
                 <h3 class="teacher-options--title">Choose a teacher</h3>
                 <label class="teacher-options--name">
