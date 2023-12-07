@@ -291,33 +291,62 @@
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById("form");
-    form.addEventListener('submit', formSend);
 
-    async function formSend(event) {
-        event.preventDefault();
 
-        let formData = new FormData(form);
+// document.getElementById("form").addEventListener("submit", function(event) {
+//     event.preventDefault();
+//     var formData = new FormData(this);
 
-        try {
-            const response = await fetch('sendmail.php', {
-                method: 'POST',
-                body: formData
-            });
+//     var xhr = new XMLHttpRequest();
+//     xhr.open("POST", "sendmail.php", true);
+//     xhr.onreadystatechange = function() {
+//         if (xhr.readyState === XMLHttpRequest.DONE) {
+//             if (xhr.status === 200) {
+//                 alert("Повідомлення успішно відправлене!");
+//                 // Очистити форму після відправки
+//                 document.getElementById("form").reset();
+//             } else {
+//                 alert("Помилка під час відправки повідомлення.");
+//             }
+//         }
+//     };
+//     xhr.send(formData);
+// });
 
-            if (response.ok) {
-                const result = await response.json();
-                console.log('result', result);
-                alert(result.message);
-                form.reset();
+
+
+
+
+
+
+
+
+document.getElementById("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let formData = new FormData(this);
+
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "sendmail.php", true);
+    
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            var response = JSON.parse(xhr.responseText);
+            if (response && response.message) {
+                alert(response.message);
+                document.getElementById("form").reset(); // Очистити форму після відправки
             } else {
-                alert('Error sending email');
+                alert("Помилка під час відправки повідомлення.");
             }
-        } catch (error) {
-            console.error('Error:', error);
-            alert('Error sending form data');
+        } else {
+            alert("Сталася помилка під час відправлення повідомлення. Спробуйте знову.");
         }
-    }
+    };
+
+    xhr.onerror = function() {
+        alert("Сталася помилка під час відправлення повідомлення. Спробуйте знову.");
+    };
+
+    xhr.send(formData);
 });
 

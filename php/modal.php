@@ -9,10 +9,11 @@
         </a>
         <h2 class="modal-content--title">Leave an Application</h2>
         <p class="modal-content--text">Please use the form below to contact us. Enter your name, email, and message, and we'll get back to you shortly.</p>
-        <form id="form" class="modal-form">
-            <input class="modal-form--input _req" type="text" placeholder="Name">
-            <input class="modal-form--input _req email" type="email" placeholder="Email">
-            <textarea class="modal-form--textarea" placeholder="Comment"></textarea>
+        <form id="form" class="modal-form" method="post" action="sendmail.php">
+
+            <input class="modal-form--input _req" type="text" placeholder="Name" name="name">
+            <input class="modal-form--input _req email" type="email" placeholder="Email" name="email">
+            <textarea class="modal-form--textarea" placeholder="Comment" name="comment"></textarea>
 
             <div class="teacher-options modal-form">
                 <h3 class="teacher-options--title">Choose a teacher</h3>
