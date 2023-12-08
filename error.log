@@ -1,7 +1,1 @@
-[2023-12-07T17:05:54.925325+01:00] name.WARNING: This is a warning [] []
-[2023-12-07T17:05:54.930132+01:00] name.ERROR: This is an error [] []
-[2023-12-07T17:32:39.922652+01:00] name.ERROR: Помилка відправки листа: SMTP Error: Could not connect to SMTP host. Failed to connect to server [] []
-[2023-12-07T17:40:40.461450+01:00] name.ERROR: Помилка відправки листа: SMTP Error: Could not connect to SMTP host. Failed to connect to server [] []
-[2023-12-07T17:49:02.382278+01:00] name.ERROR: Помилка відправки листа: SMTP Error: Could not connect to SMTP host. Failed to connect to server [] []
-[2023-12-07T18:20:03.145942+01:00] name.ERROR: Помилка відправки листа: SMTP Error: Could not connect to SMTP host. Failed to connect to server [] []
-[2023-12-07T18:24:27.931472+01:00] name.ERROR: Помилка відправки листа: SMTP Error: Could not connect to SMTP host. Failed to connect to server [] []
+
