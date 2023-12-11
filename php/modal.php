@@ -9,7 +9,7 @@
         </a>
         <h2 class="modal-content--title">Leave an Application</h2>
         <p class="modal-content--text">Please use the form below to contact us. Enter your name, email, and message, and we'll get back to you shortly.</p>
-        <form id="form" class="modal-form" method="POST" action="sendmail.php">
+        <form id="form" class="modal-form" method="post" action="sendmail.php">
 
             <input class="modal-form--input _req" type="text" placeholder="Name" name="name">
             <input class="modal-form--input _req email" type="email" placeholder="Email" name="email">
