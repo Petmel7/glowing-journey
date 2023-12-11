@@ -68,9 +68,9 @@ if (isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
     $comment = $_POST['comment'];
 
     // Створення транспорту для відправлення
-    $transport = (new Swift_SmtpTransport('smtp.ukr.net', 465))
-        ->setUsername('romanbodnarr@ukr.net')
-        ->setPassword('FUUhXJwPiqnWDEyG'); // Пароль для вашої поштової скриньки
+    $transport = (new Swift_SmtpTransport('smtp.gmail.com', 465, 'SSL'))
+        ->setUsername('olegsiuma@gmail.com')
+        ->setPassword('qwtq sldb szow mpmn'); // Пароль для вашої поштової скриньки
 
     // Створення об'єкта Mailer
     $mailer = new Swift_Mailer($transport);
@@ -78,8 +78,8 @@ if (isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
     // Створення листа
     $message = (new Swift_Message('New Form Submission'))
         // ->setFrom([$email => $name])
-        ->setFrom(['romanbodnarr@ukr.net' => 'glowing-journey'])
-        ->setTo(['romanbodnarr@ukr.net'])
+        ->setFrom(['olegsiuma@gmail.com' => 'glowing-journey'])
+        ->setTo(['olegsiuma@gmail.com'])
         ->setBody('Name: ' . $name . "\nEmail: " . $email . "\nComment: " . $comment);
 
     // Відправлення листа
@@ -91,3 +91,8 @@ if (isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
         echo 'Помилка відправки листа';
     }
 }
+
+
+
+
+// qwtq sldb szow mpmn
