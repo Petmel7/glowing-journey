@@ -1,58 +1,47 @@
 <?php
 
-// use PHPMailer\PHPMailer\PHPMailer;
-// use PHPMailer\PHPMailer\Exception;
-// use PHPMailer\PHPMailer\SMTP;
+// require 'vendor/autoload.php';
 
-// use Monolog\Level;
-// use Monolog\Logger;
-// use Monolog\Handler\StreamHandler;
+// header('Content-Type: application/json');
 
-// require_once './vendor/autoload.php';
-// require './vendor/phpmailer/phpmailer/src/PHPMailer.php';
-// require './vendor/phpmailer/phpmailer/src/Exception.php';
-// require './vendor/phpmailer/phpmailer/src/SMTP.php';
-
-// $log = new Logger('name');
-// $log->pushHandler(new StreamHandler(__DIR__ . '/error.log', Level::Warning));
+// $response = array();
 
 // if (isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
-//     $name = $_POST['name'];
-//     $email = $_POST['email'];
-//     $comment = $_POST['comment'];
+//     $name = $_POST['name'] ?? '';
+//     $email = $_POST['email'] ?? '';
+//     $comment = $_POST['comment'] ?? '';
 
-//     $mail = new PHPMailer(true);
+//     if (!empty($name) && !empty($email) && !empty($comment)) {
+//         $transport = (new Swift_SmtpTransport('smtp.gmail.com', 465, 'ssl'))
+//             ->setUsername('olegsiuma@gmail.com')
+//             ->setPassword('qwtq sldb szow mpmn');
 
-//     try {
-//         $mail->isSMTP();
-//         $mail->Host = 'smtp.ukr.net';
-//         $mail->SMTPAuth = true;
-//         $mail->Username = 'romanbodnarr@ukr.net';
-//         $mail->Password = 'FUUhXJwPiqnWDEyG';
-//         $mail->SMTPSecure = 'SSL';
-//         $mail->Port = 465;
+//         $mailer = new Swift_Mailer($transport);
 
-//         $mail->setFrom($email, $name);
-//         $mail->addAddress('romanbodnarr@ukr.net');
-//         $mail->isHTML(true);
-//         $mail->Subject = 'New Form Submission';
-//         $mail->Body = 'Name: ' . $name . "\nEmail: " . $email . "\nComment: " . $comment;
+//         $message = (new Swift_Message('New Form Submission'))
+//             ->setFrom([$email => $name])
+//             ->setTo(['olegsiuma@gmail.com'])
+//             ->setBody('Name: ' . $name . "\nEmail: " . $email . "\nComment: " . $comment);
 
-//         $mail->send();
+//         $result = $mailer->send($message);
 
-//         $log->info('Лист успішно відправлено: ' . $email);
-
-//         header('Content-Type: application/json');
-//         echo json_encode(['message' => 'Повідомлення успішно відправлене!']);
-//     } catch (Exception $e) {
-//         $log->error('Помилка відправки листа: ' . $e->getMessage());
-
-//         header('Content-Type: application/json');
-//         echo json_encode(['error' => 'Повідомлення не вдалося відправити. Помилка: ' . $mail->ErrorInfo]);
+//         if ($result) {
+//             $response['success'] = true;
+//             $response['message'] = 'Лист успішно відправлено!';
+//         } else {
+//             $response['success'] = false;
+//             $response['message'] = 'Помилка відправки листа';
+//         }
+//     } else {
+//         $response['success'] = false;
+//         $response['message'] = 'Будь ласка, заповніть усі поля форми';
 //     }
+// } else {
+//     $response['success'] = false;
+//     $response['message'] = 'Помилка методу запиту';
 // }
 
-
+// echo json_encode($response);
 
 
 
@@ -61,38 +50,48 @@
 
 require 'vendor/autoload.php';
 
+header('Content-Type: application/json');
+
+$response = array();
+
 if (isset($_SERVER["REQUEST_METHOD"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
-    // Отримання даних з форми
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $comment = $_POST['comment'];
+    $name = $_POST['name'] ?? '';
+    $email = $_POST['email'] ?? '';
+    $comment = $_POST['comment'] ?? '';
 
-    // Створення транспорту для відправлення
-    $transport = (new Swift_SmtpTransport('smtp.gmail.com', 465, 'SSL'))
-        ->setUsername('olegsiuma@gmail.com')
-        ->setPassword('qwtq sldb szow mpmn'); // Пароль для вашої поштової скриньки
+    $teacher = $_POST['teacher'] ?? '';
 
-    // Створення об'єкта Mailer
-    $mailer = new Swift_Mailer($transport);
+    if (!empty($name) && !empty($email) && !empty($comment) && !empty($teacher)) {
 
-    // Створення листа
-    $message = (new Swift_Message('New Form Submission'))
-        // ->setFrom([$email => $name])
-        ->setFrom(['olegsiuma@gmail.com' => 'glowing-journey'])
-        ->setTo(['olegsiuma@gmail.com'])
-        ->setBody('Name: ' . $name . "\nEmail: " . $email . "\nComment: " . $comment);
+        $transport = (new Swift_SmtpTransport('smtp.gmail.com', 465, 'SSL'))
+            ->setUsername('olegsiuma@gmail.com')
+            ->setPassword('qwtq sldb szow mpmn');
 
-    // Відправлення листа
-    $result = $mailer->send($message);
+        $mailer = new Swift_Mailer($transport);
 
-    if ($result) {
-        echo 'Лист успішно відправлено!';
+        $messageBody = 'Name: ' . $name . "\nEmail: " . $email . "\nComment: " . $comment . "\nChosen Teacher: " . $teacher;
+
+        $message = (new Swift_Message('New Form Submission'))
+            ->setFrom([$email => $name])
+            ->setTo(['olegsiuma@gmail.com'])
+            ->setBody($messageBody);
+
+        $result = $mailer->send($message);
+
+        if ($result) {
+            $response['success'] = true;
+            $response['message'] = 'Лист успішно відправлено!';
+        } else {
+            $response['success'] = false;
+            $response['message'] = 'Помилка відправки листа';
+        }
     } else {
-        echo 'Помилка відправки листа';
+        $response['success'] = false;
+        $response['message'] = 'Будь ласка, заповніть усі поля форми та оберіть хоча б одного вчителя';
     }
+} else {
+    $response['success'] = false;
+    $response['message'] = 'Помилка методу запиту';
 }
 
-
-
-
-// qwtq sldb szow mpmn
+echo json_encode($response);

@@ -15,26 +15,26 @@
             <input class="modal-form--input _req email" type="email" placeholder="Email" name="email">
             <textarea class="modal-form--textarea" placeholder="Comment" name="comment"></textarea>
 
-            <div class="teacher-options modal-form">
+            <div class="teacher-options modal-form _req">
                 <h3 class="teacher-options--title">Choose a teacher</h3>
                 <label class="teacher-options--name">
                     <input class="teacher-options--checkbox " type="checkbox" value="Maria" name="teacher">
-                    <span class="teacher-custom-checkbox"></span>
+                    <span class="teacher-custom-checkbox _marker"></span>
                     Maria
                 </label>
                 <label class="teacher-options--name">
                     <input class="teacher-options--checkbox " type="checkbox" value="Artem" name="teacher">
-                    <span class="teacher-custom-checkbox"></span>
+                    <span class="teacher-custom-checkbox _marker"></span>
                     Artem
                 </label>
                 <label class="teacher-options--name">
                     <input class="teacher-options--checkbox " type="checkbox" value="Ilona" name="teacher">
-                    <span class="teacher-custom-checkbox"></span>
+                    <span class="teacher-custom-checkbox _marker"></span>
                     Ilona
                 </label>
                 <label class="teacher-options--name">
                     <input class="teacher-options--checkbox " type="checkbox" value="Volodymyr" name="teacher">
-                    <span class="teacher-custom-checkbox"></span>
+                    <span class="teacher-custom-checkbox _marker"></span>
                     Volodymyr
                 </label>
             </div>

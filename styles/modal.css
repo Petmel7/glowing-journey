@@ -75,9 +75,9 @@
     outline: 1px solid red;
 }
 
-.teacher-options--name._error.teacher-custom-checkbox {
+/* .teacher-options--name._error.teacher-custom-checkbox {
     border: 2px solid red;
-}
+} */
 
 .modal-form::after {
     content: '';
