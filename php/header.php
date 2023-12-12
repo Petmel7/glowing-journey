@@ -11,19 +11,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <?php
-    echo '<link rel="stylesheet" href="styles/modal.css">';
-    echo '<link rel="stylesheet" href="styles/styles.css">';
-    echo '<link rel="stylesheet" href="styles/header.css">';
-    echo '<link rel="stylesheet" href="styles/hero.css">';
-    echo '<link rel="stylesheet" href="styles/about-us.css">';
-    echo '<link rel="stylesheet" href="styles/footer.css">';
-    echo '<link rel="stylesheet" href="styles/our-lessons.css">';
-    echo '<link rel="stylesheet" href="styles/master.css">';
-    echo '<link rel="stylesheet" href="styles/meet-our-teachers.css">';
-    echo '<link rel="stylesheet" href="styles/what-our-students-say.css">';
-    echo '<link rel="stylesheet" href="styles/mobile-menu.css">';
-    ?>
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/about-us.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/our-lessons.css">
+    <link rel="stylesheet" href="styles/master.css">
+    <link rel="stylesheet" href="styles/meet-our-teachers.css">
+    <link rel="stylesheet" href="styles/what-our-students-say.css">
+    <link rel="stylesheet" href="styles/mobile-menu.css">
 </head>
 
 <body>

@@ -3,7 +3,7 @@
 .modal {
     display: none;
     position: fixed;
-    z-index: 999;
+    z-index: 2;
     left: 0;
     top: 0;
     width: 100%;
@@ -71,6 +71,13 @@
 
 /* ================================== */
 
+/* ._sending {
+    background-image: url('../images.png/loading.gif');
+    background-size: cover;
+    
+    z-index: 999;
+} */
+
 ._error {
     outline: 1px solid red;
 }
@@ -83,30 +90,22 @@
     content: '';
     position: absolute;
     width: 20px;
-    /* Ширина іконки помилки */
     height: 20px;
-    /* Висота іконки помилки */
     background-image: url('../images.svg/symbol-defs-error.svg#icon-fluent-mdl2_error');
-    /* Додайте ваш SVG */
     background-size: cover;
     right: 5px;
-    /* Позиціюємо у правому куті інпуту */
     top: 50%;
-    /* Вирівнюємо по вертикалі */
     transform: translateY(-50%);
-    /* Коригуємо положення по вертикалі */
     fill: red;
-    /* background-color:brown; */
-    
 }
 
 /* loading */
 
-.form-body {
+/* .modal-form {
     position: relative;
 }
 
-.form-body::after {
+.modal-form::after {
     content: '';
     position: absolute;
     top: 0;
@@ -118,9 +117,23 @@
     visibility: hidden;
 }
 
-.form-body.sending::after {
+.modal-form ._sending::after {
     opacity: 1;
     visibility: hidden;
+} */
+
+.loading-gif {
+    display: none;
+    /* Приховуємо gif за замовчуванням */
+    /* Останній фрейм gif буде відображатися */
+    background: url('../images.png/loading.gif') center center no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    /* Забезпечуємо вищий індекс, щоб він був поверх форми */
 }
 
 /* ================================== */

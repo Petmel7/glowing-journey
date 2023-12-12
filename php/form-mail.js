@@ -27,18 +27,18 @@ document.addEventListener('DOMContentLoaded', function () {
                     form.classList.remove('_sending');
 
                 } else {
-                    alert('Помилка');
+                    alert('Error');
                     form.classList.remove('_sending');
                 }
 
             } catch (error) {
                 console.error('Error:', error);
-                alert('Сталася помилка під час відправки форми');
+                alert('The error occurred while submitting the form.');
                 form.classList.remove('_sending');
             }
         
         } else {
-            alert('Заповніть форму будь-ласка');
+            alert('Please fill out the form.');
         }
     }
 
@@ -72,18 +72,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function formAddError(input) {
         input.classList.add('_error');
-        const parentElement = input.parentElement; // Отримуємо батьківський елемент
-        if (parentElement) {
-            parentElement.classList.add('_error'); // Додаємо клас помилки до батьківського елемента
-        }
     }
 
     function formRemoveError(input) {
         input.classList.remove('_error');
-        const parentElement = input.parentElement; // Отримуємо батьківський елемент
-        if (parentElement) {
-            parentElement.classList.add('_error'); // Додаємо клас помилки до батьківського елемента
-        }
     }
 
     function emailTest(input) {
